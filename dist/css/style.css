@@ -550,3 +550,11 @@ img {
   font-size: 1.0416666667vw;
   color: #515151;
 }
+
+.button .a {
+  display: none;
+}
+
+.button .b {
+  display: block;
+}
