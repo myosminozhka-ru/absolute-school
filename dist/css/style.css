@@ -552,5 +552,6 @@ img {
 }
 
 body {
-  display: none;
+  background: #000;
+  color: #000;
 }
