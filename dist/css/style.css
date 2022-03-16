@@ -551,8 +551,10 @@ img {
   color: #515151;
 }
 
-body {
-  background: #000;
-  color: #000;
+.button .a {
+  display: none;
+}
+
+.button .b {
   display: block;
 }
