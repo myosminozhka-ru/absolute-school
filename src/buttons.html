@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компоненты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app">
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "order",
+            "text" : "Мои заказы"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "cart_min",
+            "text" : "Корзина"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "white",
+            "text" : "Развивающие игрушки"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "green",
+            "text" : "Все"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "orange",
+            "text" : "Выход"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "cart",
+            "text" : "Добавить"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "help",
+            "text" : "Помощь"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "no_btn",
+            "text" : "Нет"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "yes_btn",
+            "text" : "Да"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "close",
+            "text" : "закрыть"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "checkout",
+            "text" : "Оформить"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "back",
+            "text" : "На главную"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "prev",
+            "text" : "Назад"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "sl_next",
+            "text" : "/"
+        })
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

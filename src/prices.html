@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элементы карточки</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app">
+        @@include('blocks/components/typografy/prices/index.html', {
+            "type" : "price",
+            "text" : "14 500"
+        })
+        @@include('blocks/components/typografy/prices/index.html', {
+            "type" : "prod_amount",
+            "text" : "1шт."
+        })
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -6,22 +6,18 @@
     <meta http-equiv="x-rim-auto-match" content="none">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Компоненты</title>
+    <title>Чекбоксы</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper" id="app">
-        @@include('blocks/components/button/button.html', {
-            "type" : "white",
-            "text" : "Развивающие игрушки"
+        @@include('blocks/components/forms/checkbox/index.html', {
+            "type" : "check_str",
+            "text" : "indigo"
         })
-        @@include('blocks/components/button/button.html', {
-            "type" : "green",
-            "text" : "Все"
-        })
-        @@include('blocks/components/button/button.html', {
-            "type" : "orange",
-            "text" : "Выход"
+        @@include('blocks/components/forms/checkbox/index.html', {
+            "type" : "check_size",
+            "text" : "xxl"
         })
     </div>
     <script src="js/app.min.js"></script>

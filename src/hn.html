@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовки</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app">
+        @@include('blocks/components/typografy/hn/index.html', {
+            "type" : "h1",
+            "text" : "Название в три слова и максимум 2 строки"
+        })
+        @@include('blocks/components/typografy/hn/index.html', {
+            "type" : "h2",
+            "text" : "Название в три слова и максимум 2 строки"
+        })
+        @@include('blocks/components/typografy/hn/index.html', {
+            "type" : "h3",
+            "text" : "Название в три слова и максимум 2 строки"
+        })
+        @@include('blocks/components/typografy/hn/index.html', {
+            "type" : "h4",
+            "text" : "Название в три слова и максимум 2 строки"
+        })
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
