@@ -568,6 +568,79 @@
             }
         }
     }
+    &--yes_btn {
+        cursor: pointer;
+        text-decoration: none;
+        padding: vw(30) vw(10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: vw(161);
+        font-family: 'Jingleberry', serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: vw(35);
+        text-transform: uppercase;
+        transition: all .3s ease-out;
+        position: relative;
+        color: #fff;
+        svg {
+            position: absolute;
+            top: 0;
+            transition: all .3s ease-out;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: -1;
+            path {
+                transition: all .3s ease-out;
+            }
+            filter: drop-shadow(0px 9px 0px #AD7026);
+        }
+        &:hover {
+            color: #fff;
+            svg {
+                filter: drop-shadow(0px 0px 0px #AD7026);
+                path {
+                    fill: #E49535;
+                }
+            }
+        }
+        &:active {
+            color: #fff;
+            svg {
+                filter: drop-shadow(0px 0px 0px #AD7026);
+                path {
+                    fill: #F8A846;
+                }
+            }
+        }
+    }    
+    &--sl_next {
+        font-size: 0;
+        cursor: pointer;
+        svg {
+            transform: rotate(-5deg);
+            filter: drop-shadow(0px 5px 0px #AD7026);
+            transition: all .3s ease-out;
+            path {
+                transition: all .3s ease-out;
+            }
+        }
+        &:hover {
+            svg {
+                transform: unset;
+            }
+        }
+        &:active {
+            svg {
+                filter: drop-shadow(0px 0px 0px #AD7026);
+            }
+        }
+    }
     @media all and (max-width: 1023px) {
         &--green {
             span {
@@ -685,6 +758,11 @@
             color: #000;
         }
         &--no_btn {
+            font-size: 20px;
+            padding: 19px 5px;
+            width: 101px;
+        }
+        &--yes_btn {
             font-size: 20px;
             padding: 19px 5px;
             width: 101px;
