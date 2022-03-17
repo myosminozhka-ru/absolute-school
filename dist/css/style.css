@@ -966,6 +966,85 @@ img {
   fill: #F8A846;
 }
 
+.button--no_btn {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.5625vw 0.5208333333vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.6458333333vw;
+  font-family: "Jingleberry", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.8229166667vw;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+  position: relative;
+  color: #AD7026;
+}
+
+.button--no_btn svg {
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease-out;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+  filter: drop-shadow(0px 9px 0px #AD7026);
+}
+
+.button--no_btn svg path {
+  fill: #FFF2E3;
+  transition: all 0.3s ease-out;
+}
+
+.button--no_btn:hover,
+.button--no_btn:active {
+  color: #fff;
+}
+
+.button--no_btn:hover svg,
+.button--no_btn:active svg {
+  filter: drop-shadow(0px 0px 0px #AD7026);
+}
+
+.button--no_btn:hover svg path,
+.button--no_btn:active svg path {
+  fill: #E49535;
+}
+
+.button--close {
+  font-size: 0;
+  width: 3.125vw;
+  height: 3.125vw;
+  cursor: pointer;
+}
+
+.button--close svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 9px 0px #6A8626);
+  transition: all 0.3s ease-out;
+}
+
+.button--close:hover svg {
+  filter: drop-shadow(0px 0px 0px #6A8626);
+}
+
+.button--close:active svg {
+  filter: drop-shadow(0px 0px 0px #6A8626);
+}
+
+.button--close:active svg > path {
+  fill: #9DC739;
+}
+
 @media all and (max-width: 1023px) {
   .button--green span {
     font-size: 16px;
@@ -1092,5 +1171,16 @@ img {
 
   .button--help {
     color: #000;
+  }
+
+  .button--no_btn {
+    font-size: 20px;
+    padding: 19px 5px;
+    width: 101px;
+  }
+
+  .button--close {
+    width: 44px;
+    height: 44px;
   }
 }
