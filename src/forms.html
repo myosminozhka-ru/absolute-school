@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инпуты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app">
+        @@include('blocks/components/forms/inputs/index.html', {
+            "type" : "orange",
+            "text" : "Введите что нужно найти",
+            "error" : false
+        })
+        @@include('blocks/components/forms/inputs/index.html', {
+            "type" : "white",
+            "text" : "Введите что нужно найти",
+            "error" : false
+        })
+        @@include('blocks/components/forms/inputs/index.html', {
+            "type" : "orange",
+            "text" : "Введите что нужно найти",
+            "error" : true
+        })
+        @@include('blocks/components/forms/inputs/index.html', {
+            "type" : "white",
+            "text" : "Введите что нужно найти",
+            "error" : true
+        })
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
