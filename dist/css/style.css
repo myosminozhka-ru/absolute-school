@@ -932,6 +932,40 @@ img {
   fill: #F8A846;
 }
 
+.button--help {
+  display: flex;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #515151;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.button--help svg {
+  margin-right: 10px;
+  filter: drop-shadow(0px 9px 0px #AD7026);
+  transition: all 0.3s ease-out;
+}
+
+.button--help:hover svg {
+  filter: drop-shadow(0px 0px 0px #AD7026);
+}
+
+.button--help:active svg {
+  filter: drop-shadow(0px 0px 0px #AD7026);
+}
+
+.button--help:active svg path {
+  fill: #F8A846;
+}
+
 @media all and (max-width: 1023px) {
   .button--green span {
     font-size: 16px;
@@ -1054,5 +1088,9 @@ img {
     right: 50%;
     margin-top: -12.5px;
     margin-left: -12.5px;
+  }
+
+  .button--help {
+    color: #000;
   }
 }
