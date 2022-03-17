@@ -704,6 +704,8 @@ img {
 }
 
 .button--order {
+  display: inline-flex;
+  align-items: center;
   font-family: "Gilroy", serif;
   font-style: normal;
   font-weight: 600;
@@ -711,7 +713,6 @@ img {
   color: #515151;
   position: relative;
   text-decoration: none;
-  display: inline-block;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -743,7 +744,7 @@ img {
   top: 50%;
   width: 4.0625vw;
   height: 4.0625vw;
-  margin-top: -1.8229166667vw;
+  margin-top: -1.9791666667vw;
   transition: all 0.3s ease-out;
   filter: drop-shadow(0px 9px 0px #ECCC5D);
 }
@@ -761,6 +762,107 @@ img {
 
 .button--order:hover svg,
 .button--order:active svg {
+  filter: drop-shadow(0px 0px 0px #ECCC5D);
+}
+
+.button--cart_min {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.0416666667vw;
+  color: #515151;
+  position: relative;
+  text-decoration: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  padding-right: 4.5833333333vw;
+}
+
+.button--cart_min .cart_amount {
+  z-index: 2;
+  position: absolute;
+  top: -2.34375vw;
+  right: -0.7291666667vw;
+  min-width: 1.9270833333vw;
+  min-height: 1.9270833333vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button--cart_min .cart_amount svg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.button--cart_min .cart_amount .amt {
+  padding: 0.15625vw;
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8333333333vw;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+}
+
+.button--cart_min span {
+  position: relative;
+}
+
+.button--cart_min span:before {
+  position: absolute;
+  content: "";
+  height: 0.8333333333vw;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  bottom: -1.0416666667vw;
+  transition: all 0.3s ease-out;
+}
+
+.button--cart_min .icon > svg {
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 4.0625vw;
+  height: 4.0625vw;
+  margin-top: -1.9791666667vw;
+  transition: all 0.3s ease-out;
+  filter: drop-shadow(0px 9px 0px #ECCC5D);
+}
+
+.button--cart_min:hover,
+.button--cart_min:active {
+  color: #515151;
+}
+
+.button--cart_min:hover span:before,
+.button--cart_min:active span:before {
+  opacity: 1;
+  background: url("data:image/svg+xml,%3Csvg width='80' height='16' viewBox='0 0 80 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M47.2133 4.5L79.9997 3V7.34586L55.0822 8.99971L49.7089 13.1371L20.9837 9.49971L0 15.5V11L5.24593 10L19.6722 5.5L43.2789 8.49971L47.2133 4.5Z' fill='%23BB7A2B'/%3E%3Cpath d='M47.2134 1.5L79.9997 0V4.34586L55.0822 5.99971L49.7089 10.1371L20.9837 6.49971L0 12.5V8L5.24593 7L19.6722 2.5L43.2789 5.49971L47.2134 1.5Z' fill='%23E49535'/%3E%3C/svg%3E%0A") 50%/100% no-repeat;
+}
+
+.button--cart_min:hover svg,
+.button--cart_min:active svg {
   filter: drop-shadow(0px 0px 0px #ECCC5D);
 }
 
@@ -881,6 +983,46 @@ img {
   .button--order span:before {
     bottom: -21px;
     height: 17px;
+  }
+
+  .button--cart_min {
+    font-size: 20px;
+    padding-right: 0px;
+    padding-left: 87px;
+    color: #000;
+    padding-left: 0;
+    flex-direction: row-reverse;
+  }
+
+  .button--cart_min span:before {
+    bottom: -21px;
+    height: 17px;
+  }
+
+  .button--cart_min .icon {
+    width: 70px;
+    position: relative;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+  .button--cart_min .icon > svg {
+    width: 67px;
+    height: 58px;
+    margin-top: -27.5px;
+    left: 0;
+    right: unset;
+  }
+
+  .button--cart_min .cart_amount {
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    right: -10px;
+  }
+
+  .button--cart_min .cart_amount .amt {
+    font-size: 14px;
   }
 
   .button--cart {
