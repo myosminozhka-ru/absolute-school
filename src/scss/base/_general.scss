@@ -14,6 +14,14 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background: url('img/bg_site.jpg') 0;
+    padding: vw(40) vw(150) vw(100) vw(150);
+    &.isTablet {
+        padding: 22px 15px 50px 15px;
+    }
+    &.isMobile {
+        padding: 22px 15px 50px 15px;
+    }
 }
 .content {
     flex: 1 0 auto;
@@ -22,7 +30,13 @@ body {
     flex: 0 0 auto;
 }
 .center-block {
-    max-width: 1800px;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-block_full {
+    max-width: 1600px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;

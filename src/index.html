@@ -12,12 +12,9 @@
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
-        <main>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, soluta.</span>
-            <img src="@img/icons/icons.svg#benefit_1" alt="benefit_1"/>
-            <img src="@img/download.png" width="100" alt="">
-            {{ isMounted }}
-        </main>
+        <div class="content">
+            
+        </div>
         @@include('blocks/modules/footer/footer.html', {})
     </div>
     <script src="js/app.min.js"></script>
