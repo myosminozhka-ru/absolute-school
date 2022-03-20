@@ -3,6 +3,8 @@
     width: 100%;
     margin-bottom: vw(80);
     align-items: center;
+    position: relative;
+    z-index: 1;
     &__logo {
         max-width: 111px;
         width: 100%;
