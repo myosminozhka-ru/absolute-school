@@ -1,1 +1,38 @@
-<header class="header"></header>
+<header class="header center-block">
+    <a href="#" class="header__logo"><img src="@img/logo.png" alt="Логотип"></a>
+    @@include('../../components/buttons/buttons.html', {
+        "type" : "help",
+        "text" : "Помощь"
+    })
+    @@include('../../components/buttons/buttons.html', {
+        "type" : "order",
+        "text" : "Мои заказы"
+    })
+    @@include('../../components/buttons/buttons.html', {
+        "type" : "cart_min",
+        "text" : "Корзина"
+    })
+    <div class="header__info">
+        <div class="header__info--img">
+            <img src="@img/avatar.png" alt="Владислав Фамильярный">
+        </div>
+        <div class="header__info--text">
+            <div class="header__info--name">Владислав Фамильярный</div>
+            <div class="header__info--price">
+                <span>Баланс:</span>
+                @@include('../../components/typografy/prices/index.html', {
+                    "type" : "price",
+                    "text" : "14 500"
+                })
+            </div>
+        </div>
+    </div>
+    @@include('../../components/buttons/buttons.html', {
+        "type" : "orange",
+        "text" : "Выход"
+    })
+    @@include('../../components/buttons/buttons.html', {
+        "type" : "burger",
+        "text" : "Меню"
+    })
+</header>
