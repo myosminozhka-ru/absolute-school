@@ -1,0 +1,9 @@
+.cards {
+    &__item {
+        background: #F7DD85;
+        box-shadow: 0px 70px 60px -60px #CCAD86, inset 0px -16px 29px rgba(151, 113, 65, 0.2), inset 0px 10px 20px rgba(255, 255, 255, 0.15);
+        border-radius: vw(50);
+        margin-bottom: vw(100);
+        padding: vw(64) vw(160) vw(56) vw(104);
+    }
+}

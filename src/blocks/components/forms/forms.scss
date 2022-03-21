@@ -126,6 +126,8 @@
     transition: all .3s ease-out;
     text-transform: uppercase;
     color: #424242;
+    min-height: 31px;
+    display: block;
     .custom-checkbox {
         + div {
             &:before {

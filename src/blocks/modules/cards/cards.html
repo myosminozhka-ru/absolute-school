@@ -1,0 +1,34 @@
+<div class="cards">
+    <div class="cards__item">
+        <div class="cards__item--l-side">
+            <h1 class="cards__item--title">Название в три слова 
+                и максимум 2 строки</h1>
+            <div class="cards__item--text">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
+            <form action="">
+                <div class="cards__item--colors">
+                    @@include('../../components/forms/checkbox/index.html', {
+                        "type" : "check_str",
+                        "text" : "indigo"
+                    })
+                </div>
+                <div class="cards__item--size">
+                    @@include('../../components/forms/checkbox/index.html', {
+                        "type" : "check_size",
+                        "text" : "xxl"
+                    })
+                </div>
+                @@include('../../components/typografy/prices/index.html', {
+                    "type" : "price",
+                    "text" : "14 500"
+                })
+                @@include('../../components/buttons/buttons.html', {
+                    "type" : "cart",
+                    "text" : "Добавить"
+                })
+            </form>
+        </div>
+        <div class="cards__item-r-side">
+            <img src="@img/shirt.png" alt="">
+        </div>
+    </div>
+</div>
