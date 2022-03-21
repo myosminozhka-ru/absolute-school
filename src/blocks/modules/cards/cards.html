@@ -6,16 +6,68 @@
             <div class="cards__item--text">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
             <form action="">
                 <div class="cards__item--colors">
-                    @@include('../../components/forms/checkbox/index.html', {
-                        "type" : "check_str",
-                        "text" : "indigo"
-                    })
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
+                    <label class="checkbox check_standart">
+                        <input class="custom-checkbox" type="radio" value="Серый">
+                        <div>Серый</div>
+                    </label>
                 </div>
                 <div class="cards__item--size">
-                    @@include('../../components/forms/checkbox/index.html', {
-                        "type" : "check_size",
-                        "text" : "xxl"
-                    })
+                    <label class="checkbox check_size">
+                        <input class="custom-checkbox" type="radio" value="XXL">
+                        <div>XXL</div>
+                    </label>
+                    <label class="checkbox check_size">
+                        <input class="custom-checkbox" type="radio" value="XXL">
+                        <div>XL</div>
+                    </label>
+                    <label class="checkbox check_size">
+                        <input class="custom-checkbox" type="radio" value="XXL">
+                        <div>L</div>
+                    </label>
+                    <label class="checkbox check_size">
+                        <input class="custom-checkbox" type="radio" value="XXL">
+                        <div>M</div>
+                    </label>
+                    <label class="checkbox check_size">
+                        <input class="custom-checkbox" type="radio" value="XXL">
+                        <div>S</div>
+                    </label>
+                    <label class="checkbox check_size">
+                        <input class="custom-checkbox" type="radio" value="XXL">
+                        <div>XS</div>
+                    </label>
                 </div>
                 @@include('../../components/typografy/prices/index.html', {
                     "type" : "price",
@@ -28,7 +80,26 @@
             </form>
         </div>
         <div class="cards__item-r-side">
-            <img src="@img/shirt.png" alt="">
+            <div class="glide cards__slider--js">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    @@for (i=0; i < 5; i++) {
+                        <li class="glide__slide">
+                            <img src="@img/shirt.png" alt="">
+                        </li>
+                    }
+                  </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    @@for (i=0; i < 5; i++) {
+                        <button class="glide__bullet" data-glide-dir="=`+ i +`"><img src="@img/shirt.png" alt=""></button>
+                    }
+                </div>
+                <div data-glide-el="controls">
+                    <button data-glide-dir="<">Start</button>
+                    <button data-glide-dir=">">End</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,3 +1,5 @@
+
+
 .cards {
     &__item {
         background: #F7DD85;
@@ -5,5 +7,46 @@
         border-radius: vw(50);
         margin-bottom: vw(100);
         padding: vw(64) vw(160) vw(56) vw(104);
+        // display: flex;
+        // justify-content: space-between;
+        width: 100%;
+        &--l-side {
+            max-width: vw(596);
+            width: 100%;
+        }
+        &--text {
+            margin-top: vw(20);
+            margin-bottom: vw(40);
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: vw(20);
+            line-height: 160%;
+            text-transform: lowercase;
+            color: #686868;
+        }
+        .price_all {
+            margin-bottom: vw(25);
+        }
+        &--colors {
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            .checkbox {
+                margin-right: 10px;
+            }
+        }
+        &--size {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            .checkbox {
+                margin-right: 44px;
+            }
+        }
+        &--r-side {
+            max-width: vw(580);
+            width: 100%;
+        }
     }
 }

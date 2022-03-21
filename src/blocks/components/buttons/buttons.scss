@@ -619,7 +619,7 @@
             }
         }
     }    
-    &--sl_next {
+    &--slider_next {
         font-size: 0;
         cursor: pointer;
         svg {
@@ -652,6 +652,7 @@
         svg {
             filter: drop-shadow(0px 9px 0px #AD7026);
             transition: all .3s ease-out;
+            pointer-events: none;
         }
         &:hover {
             svg {

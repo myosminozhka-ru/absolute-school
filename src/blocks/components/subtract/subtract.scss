@@ -1,3 +1,11 @@
+@keyframes twisting {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .subtract {
     overflow: hidden;
     position: absolute;
@@ -10,7 +18,6 @@
     &__item {
         position: absolute;
         z-index: 0;
-        animation: 15s linear 0s normal none infinite running twisting;
         pointer-events: none;
     }
     &--big {
@@ -18,24 +25,18 @@
         top: vw(-212);
         width: vw(679);
         height: vw(709);
+        animation: 30s linear 0s normal none infinite running twisting;
     }
     &--small {
         right: vw(-137);
         bottom: vw(13);
         width: vw(419);
         height: vw(437);
+        animation: 15s linear 0s normal none infinite running twisting;
     }
     img.rot {
         width: 100px;
       }
-    @keyframes twisting {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
 }
 .isTablet, .isMobile {
     .subtract {
