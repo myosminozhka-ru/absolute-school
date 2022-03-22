@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css?_v=20220322171939">
+    <link rel="stylesheet" href="css/style.css?_v=20220322194530">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -446,7 +446,7 @@
     
             </form>
         </div>
-        <div class="cards__item-r-side">
+        <div class="cards__item--r-side">
             <div class="glide cards__slider--js">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
@@ -475,20 +475,62 @@
                 </div>
                 <div class="glide__bullets" data-glide-el="controls[nav]">
                     
-                        <button class="glide__bullet" data-glide-dir="=0"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></button>
+                        <div data-glide-dir="=0"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></div>
                     
-                        <button class="glide__bullet" data-glide-dir="=1"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></button>
+                        <div data-glide-dir="=1"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></div>
                     
-                        <button class="glide__bullet" data-glide-dir="=2"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></button>
+                        <div data-glide-dir="=2"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></div>
                     
-                        <button class="glide__bullet" data-glide-dir="=3"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></button>
+                        <div data-glide-dir="=3"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></div>
                     
-                        <button class="glide__bullet" data-glide-dir="=4"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></button>
+                        <div data-glide-dir="=4"><picture><source srcset="img/shirt.webp" type="image/webp"><img src="img/shirt.png" alt=""></picture></div>
                     
                 </div>
-                <div data-glide-el="controls">
-                    <button data-glide-dir="<">Start</button>
-                    <button data-glide-dir=">">End</button>
+                <div class="glide__controls" data-glide-el="controls">
+                    <div data-glide-dir="<">
+                        <div class="button button--slider_next">
+    
+    
+        <svg width="65" height="42" viewBox="0 0 65 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41.1404 0.356261L64.4767 21.4209L39.1965 41.5924L39.7196 28.8166L0.789897 37.726L2.00828 0.997138L40.5502 13.1202L41.1404 0.356261Z" fill="#E49535"/>
+        </svg>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <span>/</span>
+    
+    
+</div>
+    
+                    </div>
+                    <div data-glide-dir=">">
+                        <div class="button button--slider_next">
+    
+    
+        <svg width="65" height="42" viewBox="0 0 65 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M41.1404 0.356261L64.4767 21.4209L39.1965 41.5924L39.7196 28.8166L0.789897 37.726L2.00828 0.997138L40.5502 13.1202L41.1404 0.356261Z" fill="#E49535"/>
+        </svg>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <span>/</span>
+    
+    
+</div>
+    
+                    </div>
                 </div>
             </div>
         </div>
@@ -501,6 +543,6 @@
     </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20220322171939"></script>
+    <script src="js/app.min.js?_v=20220322194530"></script>
 </body>
 </html>

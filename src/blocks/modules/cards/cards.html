@@ -79,7 +79,7 @@
                 })
             </form>
         </div>
-        <div class="cards__item-r-side">
+        <div class="cards__item--r-side">
             <div class="glide cards__slider--js">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
@@ -92,12 +92,22 @@
                 </div>
                 <div class="glide__bullets" data-glide-el="controls[nav]">
                     @@for (i=0; i < 5; i++) {
-                        <button class="glide__bullet" data-glide-dir="=`+ i +`"><img src="@img/shirt.png" alt=""></button>
+                        <div data-glide-dir="=`+ i +`"><img src="@img/shirt.png" alt=""></div>
                     }
                 </div>
-                <div data-glide-el="controls">
-                    <button data-glide-dir="<">Start</button>
-                    <button data-glide-dir=">">End</button>
+                <div class="glide__controls" data-glide-el="controls">
+                    <div data-glide-dir="<">
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "slider_next",
+                            "text" : "/"
+                        })
+                    </div>
+                    <div data-glide-dir=">">
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "slider_next",
+                            "text" : "/"
+                        })
+                    </div>
                 </div>
             </div>
         </div>

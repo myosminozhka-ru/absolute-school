@@ -2393,12 +2393,15 @@ h4 {
   border-radius: 2.6041666667vw;
   margin-bottom: 5.2083333333vw;
   padding: 3.3333333333vw 8.3333333333vw 2.9166666667vw 5.4166666667vw;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
 .cards__item--l-side {
   max-width: 31.0416666667vw;
   width: 100%;
+  flex: none;
 }
 
 .cards__item--text {
@@ -2418,7 +2421,7 @@ h4 {
 }
 
 .cards__item--colors {
-  margin-bottom: 40px;
+  margin-bottom: 53px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -2438,8 +2441,70 @@ h4 {
 }
 
 .cards__item--r-side {
-  max-width: 30.2083333333vw;
+  width: 30.2083333333vw;
+}
+
+.cards__item--r-side .glide {
+  position: relative;
+}
+
+.cards__item--r-side .glide__track {
+  background: #FFFFFF;
+  padding: 4.4270833333vw 3.125vw;
+  border-radius: 2.6041666667vw;
+  filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1));
+}
+
+.cards__item--r-side .glide__bullets {
+  position: relative;
+  bottom: unset;
+  margin-top: 1.0416666667vw;
+}
+
+.cards__item--r-side .glide__bullets > div {
+  padding: 1.0416666667vw 0.5208333333vw;
+  background: #FFFFFF;
+  border-radius: 1.0416666667vw;
+  filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.25));
+  opacity: 0.7;
+  transition: all 0.3s ease-out;
+  margin-left: 0.46875vw;
+  margin-right: 0.46875vw;
+}
+
+.cards__item--r-side .glide__bullets > div.glide__bullet--active {
+  opacity: 1;
+}
+
+.cards__item--r-side .glide__controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -4.84375vw;
+}
+
+.cards__item--r-side .glide__controls div:nth-child(1) div {
+  left: -1.5625vw;
+  position: relative;
+  transform: rotate(191deg);
+}
+
+.cards__item--r-side .glide__controls div:nth-child(1) div svg {
+  filter: drop-shadow(0px -5px 0px #AD7026);
+}
+
+.cards__item--r-side .glide__controls div:nth-child(1) div:active svg {
+  filter: drop-shadow(0px 0px 0px #AD7026);
+}
+
+.cards__item--r-side .glide__controls div:nth-child(2) div {
+  right: -1.5625vw;
+  position: relative;
 }
 
 .page_404 {
