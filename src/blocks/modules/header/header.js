@@ -13,13 +13,13 @@ const MainHeader = class MainHeader {
         document.querySelector('.button--burger').addEventListener('click', () => {
             this.toogleMobileMenu();
         }) 
-        if (document.querySelector('.button--closed')) {
-            document.querySelector('.button--closed').addEventListener('click', () => {
+        if (document.querySelector('.button--close')) {
+            document.querySelector('.button--close').addEventListener('click', () => {
                 this.closeMobileMenu();
             }) 
         }
         document.addEventListener('click', (event) => {
-            if (event.target.closest('.burger-body') || event.target.closest('.button--burger')) return;
+            if (event.target.closest('.menu_burger--body') || event.target.closest('.button--burger')) return;
             this.closeMobileMenu();
         }) 
 

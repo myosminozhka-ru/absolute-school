@@ -3,8 +3,6 @@
     width: 100%;
     margin-bottom: vw(80);
     align-items: center;
-    position: relative;
-    z-index: 1;
     &__logo {
         max-width: 111px;
         width: 100%;
@@ -79,6 +77,9 @@
     .button--burger {
         display: none;
     }
+    .menu_burger {
+        display: none;
+    }
 }
 .isTablet, .isMobile {
     .header {
@@ -121,7 +122,80 @@
             }
         }   
         display: flex;
-        justify-content: space-between;     
+        justify-content: space-between;    
+        .menu_burger {
+            display: block;
+            &--body {
+                position: fixed;
+                z-index: 5;
+                top: 0;
+                right: 0;   
+                width: 286px; 
+                height: 100vh;
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 0px 0px 0px 20px;    
+                overflow: auto;
+                overflow-x: hidden;
+                padding: 15px 30px 15px 40px;
+                transition: all .3s ease-out;
+                transform: translate(286px, 0px);
+            }
+            .button--order, .button--cart_min, .button--orange, .button--help {
+                display: flex;
+            }
+            .button--order, .button--cart_min {
+                margin-left: 0;
+            }
+            .button--order {
+                margin-bottom: 45px;
+            }
+            .button--orange {
+                margin-top: 10px;
+            }
+            &--item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 126px;
+                
+            }
+            &--items {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: calc(100vh - 170px);
+                padding-bottom: 100px;
+            }
+        }
+        &:before {
+            content: '';
+            transition: all .3s ease-out;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 4;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            background: rgba(131, 80, 19, 0.4);
+            backdrop-filter: blur(8px); 
+        }
+        &.isOpened {
+            .menu_burger {
+                &--body {
+                    transform: translate(0px, 0px);
+                }
+            }
+            &:before {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: all;
+            }
+        } 
     }
 }
 .isMobile {

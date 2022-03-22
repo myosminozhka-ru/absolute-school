@@ -31,8 +31,38 @@
         "type" : "orange",
         "text" : "Выход"
     })
-    @@include('../../components/buttons/buttons.html', {
-        "type" : "burger",
-        "text" : "Меню"
-    })
+    <div class="menu_burger">
+        @@include('../../components/buttons/buttons.html', {
+            "type" : "burger",
+            "text" : "Меню"
+        })
+        <div class="menu_burger--body">
+            <div class="menu_burger--item">
+                @@include('../../components/buttons/buttons.html', {
+                    "type" : "help",
+                    "text" : "Помощь"
+                })
+                @@include('../../components/buttons/buttons.html', {
+                    "type" : "close",
+                    "text" : "закрыть"
+                })
+            </div>
+            <div class="menu_burger--items">
+                <div class="menu_burger--menu">
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "order",
+                        "text" : "Мои заказы"
+                    })
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "cart_min",
+                        "text" : "Корзина"
+                    })  
+                </div> 
+                @@include('../../components/buttons/buttons.html', {
+                    "type" : "orange",
+                    "text" : "Выход"
+                })  
+            </div>     
+        </div>
+    </div>
 </header>

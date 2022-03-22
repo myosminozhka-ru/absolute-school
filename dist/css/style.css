@@ -561,6 +561,13 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
   src: url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("../fonts/Gilroy-BlackItalic.woff") format("woff"), url("../fonts/Gilroy-BlackItalic.ttf") format("ttf");
   font-weight: 400;
 }
@@ -575,21 +582,14 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
   font-weight: 800;
 }
 
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
+  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
   font-weight: 800;
 }
 
@@ -603,8 +603,8 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: 500;
 }
 
 @font-face {
@@ -612,13 +612,6 @@ template {
   font-display: swap;
   src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.ttf") format("ttf");
   font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
-  font-weight: 500;
 }
 
 @font-face {
@@ -638,6 +631,13 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
   src: url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff"), url("../fonts/Gilroy-RegularItalic.ttf") format("ttf");
   font-weight: 400;
 }
@@ -652,15 +652,15 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
-  font-weight: 100;
+  src: url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
@@ -678,16 +678,16 @@ template {
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Jingleberry";
   font-display: swap;
-  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.ttf") format("ttf");
+  src: url("../fonts/Jingleberry.woff2") format("woff2"), url("../fonts/Jingleberry.woff") format("woff"), url("../fonts/Jingleberry.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Jingleberry";
+  font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Jingleberry.woff2") format("woff2"), url("../fonts/Jingleberry.woff") format("woff"), url("../fonts/Jingleberry.ttf") format("ttf");
+  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -744,7 +744,7 @@ body {
 
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .content {
@@ -1567,6 +1567,11 @@ img {
   bottom: -9px;
 }
 
+.isTablet .button--orange:hover:before,
+.isMobile .button--orange:hover:before {
+  bottom: 0px;
+}
+
 .isTablet .button--white,
 .isMobile .button--white {
   font-size: 14px;
@@ -2122,8 +2127,6 @@ h4 {
   width: 100%;
   margin-bottom: 4.1666666667vw;
   align-items: center;
-  position: relative;
-  z-index: 1;
 }
 
 .header__logo {
@@ -2213,6 +2216,10 @@ h4 {
   display: none;
 }
 
+.header .menu_burger {
+  display: none;
+}
+
 .isTablet .header,
 .isMobile .header {
   margin-bottom: 30px;
@@ -2275,6 +2282,105 @@ h4 {
 .isTablet .header__info--price .price_all span,
 .isMobile .header__info--price .price_all span {
   font-size: 35px;
+}
+
+.isTablet .header .menu_burger,
+.isMobile .header .menu_burger {
+  display: block;
+}
+
+.isTablet .header .menu_burger--body,
+.isMobile .header .menu_burger--body {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 286px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0px 0px 0px 20px;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 15px 30px 15px 40px;
+  transition: all 0.3s ease-out;
+  transform: translate(286px, 0px);
+}
+
+.isTablet .header .menu_burger .button--order,
+.isTablet .header .menu_burger .button--cart_min,
+.isTablet .header .menu_burger .button--orange,
+.isTablet .header .menu_burger .button--help,
+.isMobile .header .menu_burger .button--order,
+.isMobile .header .menu_burger .button--cart_min,
+.isMobile .header .menu_burger .button--orange,
+.isMobile .header .menu_burger .button--help {
+  display: flex;
+}
+
+.isTablet .header .menu_burger .button--order,
+.isTablet .header .menu_burger .button--cart_min,
+.isMobile .header .menu_burger .button--order,
+.isMobile .header .menu_burger .button--cart_min {
+  margin-left: 0;
+}
+
+.isTablet .header .menu_burger .button--order,
+.isMobile .header .menu_burger .button--order {
+  margin-bottom: 45px;
+}
+
+.isTablet .header .menu_burger .button--orange,
+.isMobile .header .menu_burger .button--orange {
+  margin-top: 10px;
+}
+
+.isTablet .header .menu_burger--item,
+.isMobile .header .menu_burger--item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 126px;
+}
+
+.isTablet .header .menu_burger--items,
+.isMobile .header .menu_burger--items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 170px);
+  padding-bottom: 100px;
+}
+
+.isTablet .header:before,
+.isMobile .header:before {
+  content: "";
+  transition: all 0.3s ease-out;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background: rgba(131, 80, 19, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+.isTablet .header.isOpened .menu_burger--body,
+.isMobile .header.isOpened .menu_burger--body {
+  transform: translate(0px, 0px);
+}
+
+.isTablet .header.isOpened:before,
+.isMobile .header.isOpened:before {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .isMobile .header__info {
