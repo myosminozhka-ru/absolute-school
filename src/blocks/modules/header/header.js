@@ -1,13 +1,32 @@
-const Header = class Header {
-    constructor({someVareible}){
-        this.someVareible = someVareible;
+const MainHeader = class MainHeader {
+    constructor(){
+        this.isMobileMenuOpened = false;
     }
-    someMethod() {
-        console.log(this.someVareible);
+    toogleMobileMenu() {
+        this.isMobileMenuOpened = !this.isMobileMenuOpened;
+    }
+    closeMobileMenu() {
+        this.isMobileMenuOpened = false;
+    }
+    setEventListener() {
+        if (!document.querySelector('.button--burger')) return;
+        document.querySelector('.button--burger').addEventListener('click', () => {
+            this.toogleMobileMenu();
+        }) 
+        if (document.querySelector('.button--close')) {
+            document.querySelector('.button--close').addEventListener('click', () => {
+                this.closeMobileMenu();
+            }) 
+        }
+        document.addEventListener('click', (event) => {
+            if (event.target.closest('.menu_burger--body') || event.target.closest('.button--burger')) return;
+            this.closeMobileMenu();
+        }) 
+
     }
     init() {
-        this.someMethod();
+        this.setEventListener();
     }
 }
 
-export default Header;
+export default MainHeader;

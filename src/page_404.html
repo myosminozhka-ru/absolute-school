@@ -11,12 +11,16 @@
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        @@include('blocks/components/subtract/subtract.html', {})
         @@include('blocks/modules/header/header.html', {})
         <content class="content">
-            @@include('blocks/modules/cards/cards.html', {})
+            @@include('blocks/modules/page_404/page_404.html', {})
         </content>
-        @@include('blocks/modules/footer/footer.html', {})
+        <footer class="footer"></footer>
     </div>
     <script src="js/app.min.js"></script>
+    <script>
+        app.addClassToWrapper('page_404');
+    </script>
 </body>
 </html>

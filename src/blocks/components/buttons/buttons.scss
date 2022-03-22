@@ -1,7 +1,5 @@
-.buttons {
-    padding: 50px;
-}
 .button {
+    z-index: 1;
     &--green {
         position: relative;
         width: max-content;
@@ -328,12 +326,14 @@
         font-family: 'Gilroy', serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
+        font-size: vw(20);
         color: #515151;
         cursor: pointer;
         text-decoration: none;
         transition: all .3s ease-out;
         svg {
+            width: vw(35);
+            height: vw(31);
             margin-right: 10px;
             filter: drop-shadow(0px 9px 0px #AD7026);
             transition: all .3s ease-out;
@@ -619,7 +619,7 @@
             }
         }
     }    
-    &--sl_next {
+    &--slider_next {
         font-size: 0;
         cursor: pointer;
         svg {
@@ -641,7 +641,36 @@
             }
         }
     }
-    @media all and (max-width: 1023px) {
+    &--burger {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        font-size: 0;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all .3s ease-out;
+        svg {
+            filter: drop-shadow(0px 9px 0px #AD7026);
+            transition: all .3s ease-out;
+            pointer-events: none;
+        }
+        &:hover {
+            svg {
+                filter: drop-shadow(0px 0px 0px #AD7026);
+            }
+        }
+        &:active {
+            svg {
+                filter: drop-shadow(0px 0px 0px #AD7026);
+                path {
+                    fill: #F8A846;
+                }
+            }
+        }
+    }
+}
+.isTablet, .isMobile {
+    .button {
         &--green {
             span {
                 font-size: 16px;
@@ -660,6 +689,11 @@
             }
             &:before {
                 bottom: -9px;
+            }
+            &:hover {
+                &:before {
+                    bottom: 0px;
+                }
             }
         }
         &--white {
@@ -756,6 +790,11 @@
         }
         &--help {
             color: #000;
+            font-size: 20px;
+            svg {
+                width: 35px;
+                height: 31px;
+            }
         }
         &--no_btn {
             font-size: 20px;

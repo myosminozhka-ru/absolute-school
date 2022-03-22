@@ -1,0 +1,235 @@
+.header {
+    display: flex;
+    width: 100%;
+    margin-bottom: vw(80);
+    align-items: center;
+    &__logo {
+        max-width: 111px;
+        width: 100%;
+        margin-right: 30px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;    
+        margin-left: vw(60);
+        max-width: vw(350);
+        width: 100%;
+        margin-right: vW(10);
+        &--img {
+            max-width: vw(80);
+            width: 100%;
+            max-height: vw(80);
+            height: 100%;
+            margin-right: vw(20);
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.2));
+            }
+        }
+        &--text {
+            width: 100%;
+        }
+        &--name {
+            font-family: 'Gilroy', serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: vw(20);
+            color: #515151;
+            margin-bottom: vw(10);
+        }
+        &--price {
+            > span {
+                display: inline-block;
+                margin-right: vw(10);
+                font-family: 'Gilroy', serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: vw(18);
+                color: #686868;
+            }
+            .price_all {
+                font-size: inherit;
+                line-height: normal;
+                display: inline-block;
+                svg {
+                    width: vw(16);
+                    height: vw(16);
+                }
+                span {
+                    font-size: vw(40);
+                    color: #E49535;
+                }
+            }
+        }
+    }
+    .button--order {
+        margin-left: auto;
+    }
+    .button--cart_min {
+        margin-left: vw(33);
+    }
+    .button--orange {
+        margin-left: vw(15);
+    }
+    .button--burger {
+        display: none;
+    }
+    .menu_burger {
+        display: none;
+    }
+}
+.isTablet, .isMobile {
+    .header {
+        margin-bottom: 30px;
+        .button--burger {
+            display: block;
+        }
+        .button--order, .button--cart_min, .button--orange, .button--help {
+            display: none;
+        }
+        &__logo {
+            max-width: 73px;
+            margin-right: 0;
+        }
+        &__info {
+            max-width: 330px;
+            &--img {
+                max-width: 58px;
+                max-height: 58px;
+                margin-right: 10px;
+            }
+            &--name {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            &--price {
+                > span {
+                    display: none;
+                }
+                .price_all {
+                    svg {
+                        width: 14px;
+                        height: 14px;
+                        bottom: 0;
+                    }
+                    span {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }   
+        display: flex;
+        justify-content: space-between;    
+        .menu_burger {
+            display: block;
+            &--body {
+                position: fixed;
+                z-index: 5;
+                top: 0;
+                right: 0;   
+                width: 286px; 
+                height: 100vh;
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 0px 0px 0px 20px;    
+                overflow: auto;
+                overflow-x: hidden;
+                padding: 15px 30px 15px 40px;
+                transition: all .3s ease-out;
+                transform: translate(286px, 0px);
+            }
+            .button--order, .button--cart_min, .button--orange, .button--help {
+                display: flex;
+            }
+            .button--order, .button--cart_min {
+                margin-left: 0;
+            }
+            .button--order {
+                margin-bottom: 45px;
+            }
+            .button--orange {
+                margin-top: 10px;
+            }
+            &--item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 126px;
+                
+            }
+            &--items {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: calc(100vh - 170px);
+                padding-bottom: 100px;
+            }
+        }
+        &:before {
+            content: '';
+            transition: all .3s ease-out;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 4;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            background: rgba(131, 80, 19, 0.4);
+            backdrop-filter: blur(8px); 
+        }
+        &.isOpened {
+            .menu_burger {
+                &--body {
+                    transform: translate(0px, 0px);
+                }
+            }
+            &:before {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: all;
+            }
+        } 
+    }
+}
+.isMobile {
+    .header {
+        &__info {
+            max-width: 165px;
+        }
+        @media all and (max-width: 345px) {
+            &__logo {
+                max-width: 65px;
+            }
+            &__info {
+                img {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+                &--name {
+                    margin-bottom: 0;
+                    font-size: 13px;
+                }
+                &--price {
+                    .price_all {
+                        span {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+            .button--burger {
+                svg {
+                    width: 38px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

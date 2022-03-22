@@ -4,9 +4,10 @@ body {
 *,::after,::before {
     box-sizing: inherit;
 }
-html,
-body {
+html {
     height: 100%;
+}
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -14,15 +15,49 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: vw(40) vw(150) vw(100) vw(150);
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 249, 228, 39%) url(../img/bg_site.png) 0;
+        z-index: 1;
+    }
+    &.isTablet {
+        padding: 22px 15px 50px 15px;
+    }
+    &.isMobile {
+        padding: 22px 15px 50px 15px;
+    }
+}
+.header {
+    position: relative;
+    z-index: 3;
 }
 .content {
     flex: 1 0 auto;
+    position: relative;
+    z-index: 2;
 }
 .footer {
+    position: relative;
+    z-index: 2;
     flex: 0 0 auto;
 }
 .center-block {
-    max-width: 1800px;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-block_full {
+    max-width: 1600px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;

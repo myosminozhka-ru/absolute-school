@@ -4,20 +4,31 @@ globalFunctions.isWebp();
 import Vue from 'vue/dist/vue.js';
 import $ from 'jquery';
 
-import Header from '../blocks/modules/header/header.js';
+import MainHeader from '../blocks/modules/header/header.js';
+import Cards from '../blocks/modules/cards/cards.js';
 
 
 window.app = new Vue({
     el: '#app',
     data: () => ({
         isMounted: false,
+        cart: {
+            amount: 0
+        },
         sizes: {
             tablet: 1024,
             mobile: 768,
             window: window.innerWidth
         },
-        header: new Header({
-            someVareible: 'someVareible'
+        mainHeader: new MainHeader({
+            isMobileMenuOpened: false,
+        }),
+        cards: new Cards({
+            sliderOptions: {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1
+            }
         })
     }),
     beforeCreate() {
@@ -25,9 +36,10 @@ window.app = new Vue({
             this.sizes.window = window.innerWidth;
         });
     },
-    beforeMount() {
+    mounted() {
         this.isMounted = true;
-        this.header.init();
+        this.mainHeader.init();
+        this.cards.init();
     },
     computed: {
         isMobile: function () {
@@ -37,4 +49,11 @@ window.app = new Vue({
             return this.sizes.window < this.sizes.tablet && this.sizes.window > this.sizes.mobile;
         }
     },
+    methods: {
+        addClassToWrapper(nameOfClass) {
+            if (document.querySelector('.wrapper') ) {
+                document.querySelector('.wrapper').classList.add(nameOfClass)
+            }
+        }
+    }
 });

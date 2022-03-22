@@ -1,0 +1,113 @@
+
+
+.cards {
+    &__item {
+        background: #F7DD85;
+        box-shadow: 0px 70px 60px -60px #CCAD86, inset 0px -16px 29px rgba(151, 113, 65, 0.2), inset 0px 10px 20px rgba(255, 255, 255, 0.15);
+        border-radius: vw(50);
+        margin-bottom: vw(100);
+        padding: vw(64) vw(160) vw(56) vw(104);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &--l-side {
+            max-width: vw(596);
+            width: 100%;
+            flex: none;
+        }
+        &--text {
+            margin-top: vw(20);
+            margin-bottom: vw(40);
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: vw(20);
+            line-height: 160%;
+            text-transform: lowercase;
+            color: #686868;
+        }
+        .price_all {
+            margin-bottom: vw(25);
+        }
+        &--colors {
+            margin-bottom: 53px;
+            display: flex;
+            flex-wrap: wrap;
+            .checkbox {
+                margin-right: 10px;
+            }
+        }
+        &--size {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            .checkbox {
+                margin-right: 44px;
+            }
+        }
+        &--r-side {
+            width: vw(580);
+            .glide {
+                position: relative;
+                &__track {
+                    background: #FFFFFF;
+                    padding: vw(85) vw(60);
+                    border-radius: vw(50);
+                    filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1));
+                }
+                &__bullets {
+                    position: relative;
+                    bottom: unset;
+                    margin-top: vw(20);
+                    > div {
+                        padding: vw(20) vw(10);
+                        background: #FFFFFF;
+                        border-radius: vw(20);
+                        filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.25));
+                        opacity: 0.7;
+                        transition: all .3s ease-out;
+                        margin-left: vw(9);
+                        margin-right: vw(9);
+                        &.glide__bullet--active {
+                            opacity: 1;
+                        }
+                    }
+                }
+                &__controls {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;    
+                    margin-top: vw(-93);
+                    div {
+                        &:nth-child(1) {
+                            div {
+                                left: vw(-30);
+                                position: relative;
+                                transform: rotate(191deg);
+                                svg {
+                                    filter: drop-shadow(0px -5px 0px #AD7026);
+                                }
+                                &:active {
+                                    svg {
+                                        filter: drop-shadow(0px 0px 0px #AD7026);
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                            div {
+                                right: vw(-30);
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
