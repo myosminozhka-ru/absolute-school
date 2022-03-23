@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        @@include('blocks/modules/header/header.html', {})
+        <content class="content">
+            @@include('blocks/modules/cart/cart.html', {})
+        </content>
+        @@include('blocks/modules/footer/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
