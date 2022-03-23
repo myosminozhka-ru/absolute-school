@@ -561,13 +561,6 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
   src: url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("../fonts/Gilroy-BlackItalic.woff") format("woff"), url("../fonts/Gilroy-BlackItalic.ttf") format("ttf");
   font-weight: 400;
 }
@@ -582,8 +575,8 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
-  font-weight: 800;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
 }
 
 @font-face {
@@ -603,8 +596,15 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
-  font-weight: 500;
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
+  font-weight: 800;
 }
 
 @font-face {
@@ -612,6 +612,13 @@ template {
   font-display: swap;
   src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.ttf") format("ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
+  font-weight: 500;
 }
 
 @font-face {
@@ -631,13 +638,6 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
   src: url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff"), url("../fonts/Gilroy-RegularItalic.ttf") format("ttf");
   font-weight: 400;
 }
@@ -652,15 +652,15 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
-  font-weight: 100;
+  src: url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.ttf") format("ttf");
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
+  font-weight: 100;
 }
 
 @font-face {
@@ -678,16 +678,16 @@ template {
 }
 
 @font-face {
-  font-family: "Jingleberry";
+  font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Jingleberry.woff2") format("woff2"), url("../fonts/Jingleberry.woff") format("woff"), url("../fonts/Jingleberry.ttf") format("ttf");
+  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Jingleberry";
   font-display: swap;
-  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.ttf") format("ttf");
+  src: url("../fonts/Jingleberry.woff2") format("woff2"), url("../fonts/Jingleberry.woff") format("woff"), url("../fonts/Jingleberry.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -1361,6 +1361,56 @@ img {
   fill: #F8A846;
 }
 
+.button--more {
+  font-family: "Jingleberry", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.3020833333vw;
+  width: 12.4479166667vw;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.3802083333vw 0.5208333333vw;
+  width: 13.6458333333vw;
+  position: relative;
+  line-height: 160%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button--more svg {
+  transition: all 0.3s ease-out;
+  filter: drop-shadow(0px 9px 0px #6A8626);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.button--more svg path {
+  transition: all 0.3s ease-out;
+}
+
+.button--more:hover svg {
+  filter: drop-shadow(0px 0px 0px #6A8626);
+}
+
+.button--more:active svg {
+  filter: drop-shadow(0px 0px 0px #6A8626);
+}
+
+.button--more:active svg path {
+  fill: #9DC739;
+}
+
 .button--prev {
   cursor: pointer;
   text-decoration: none;
@@ -1738,6 +1788,13 @@ img {
   padding: 14px 10px;
 }
 
+.isTablet .button--more,
+.isMobile .button--more {
+  font-size: 20px;
+  width: 210px;
+  padding: 21.5px 10px;
+}
+
 .isTablet .button--prev,
 .isMobile .button--prev {
   font-size: 0;
@@ -1936,16 +1993,38 @@ img {
 }
 
 .check_standart .custom-checkbox + div:before {
-  width: 50px;
-  height: 50px;
-  background: radial-gradient(105.9% 76% at 82% 24%, rgba(255, 255, 255, 0.4) 7.19%, rgba(207, 207, 207, 0.4) 59.08%, rgba(66, 66, 66, 0.4) 100%), #FFFFFF;
+  width: 2.6041666667vw;
+  height: 2.6041666667vw;
+  background: var(--background);
   border-radius: 10px;
-  border: 2px solid #959595;
+  position: relative;
+  z-index: 2;
+  margin: 3px;
+}
+
+.check_standart .custom-checkbox + div:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: radial-gradient(75.55% 97% at 86% 12%, rgba(255, 255, 255, 0.4) 0%, rgba(87, 87, 87, 0.088) 44.8%, rgba(66, 66, 66, 0.4) 84.38%) var(--background);
+  border-radius: 10px;
+  z-index: 0;
 }
 
 .check_standart .custom-checkbox:checked + div:before {
   border: 0;
-  box-shadow: 0px 0px 0 5px rgba(21, 69, 102, 0.6);
+  box-shadow: 0px 5px 20px rgba(21, 69, 102, 0.6);
+}
+
+.check_standart .custom-checkbox:checked + div:after {
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: radial-gradient(86.46% 111% at 86% 12%, rgba(255, 105, 95, 0) 0%, rgba(124, 121, 121, 0) 54.94%, rgba(66, 66, 66, 0) 78.15%), var(--background);
 }
 
 .check_size {
@@ -2332,6 +2411,7 @@ h4 {
 .isTablet .header .menu_burger .button--orange,
 .isMobile .header .menu_burger .button--orange {
   margin-top: 10px;
+  margin-bottom: 100px;
 }
 
 .isTablet .header .menu_burger--item,
@@ -2348,7 +2428,6 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
   height: calc(100vh - 170px);
-  padding-bottom: 100px;
 }
 
 .isTablet .header:before,
@@ -2398,6 +2477,10 @@ h4 {
   width: 100%;
 }
 
+.cards__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .cards__item--l-side {
   max-width: 31.0416666667vw;
   width: 100%;
@@ -2428,6 +2511,7 @@ h4 {
 
 .cards__item--colors .checkbox {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .cards__item--size {
@@ -2450,9 +2534,16 @@ h4 {
 
 .cards__item--r-side .glide__track {
   background: #FFFFFF;
-  padding: 4.4270833333vw 3.125vw;
+  padding: 4.4270833333vw 0;
+  width: 100%;
   border-radius: 2.6041666667vw;
   filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1));
+}
+
+.cards__item--r-side .glide__track li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards__item--r-side .glide__bullets {
@@ -2464,6 +2555,7 @@ h4 {
 .cards__item--r-side .glide__bullets > div {
   padding: 1.0416666667vw 0.5208333333vw;
   background: #FFFFFF;
+  cursor: pointer;
   border-radius: 1.0416666667vw;
   filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.25));
   opacity: 0.7;
@@ -2505,6 +2597,123 @@ h4 {
 .cards__item--r-side .glide__controls div:nth-child(2) div {
   right: -1.5625vw;
   position: relative;
+}
+
+.cards__more > div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7.8125vw;
+}
+
+.isTablet .cards__item--l-side {
+  max-width: 49%;
+}
+
+.isTablet .cards__item--r-side {
+  width: 49%;
+}
+
+.isMobile .cards__more > div {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.isMobile .cards__item {
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 30px;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.isMobile .cards__item--l-side {
+  max-width: 100%;
+}
+
+.isMobile .cards__item--title {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.isMobile .cards__item--text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.isMobile .cards__item--r-side {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.isMobile .cards__item--r-side .glide__track {
+  padding: 45px 0;
+}
+
+.isMobile .cards__item--r-side .glide__controls {
+  display: none;
+}
+
+.isMobile .cards__item--r-side .glide__bullets {
+  margin-top: 20px;
+  background: #ECD27A;
+}
+
+.isMobile .cards__item--r-side .glide__bullets > div {
+  width: 30px;
+  height: 5px;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+}
+
+.isMobile .cards__item--r-side .glide__bullets > div picture {
+  display: none;
+}
+
+.isMobile .cards__item--r-side .glide__bullets > div.glide__bullet--active {
+  background: #85A833;
+}
+
+.isMobile .cards__item--r-side .glide__slide {
+  padding: 0 32px;
+}
+
+.isMobile .cards__item--color-item {
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-bottom: 20px;
+}
+
+.isMobile .cards__item--colors {
+  margin-bottom: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+}
+
+.isMobile .cards__item--size {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.isMobile .cards__item--size .checkbox {
+  margin-right: 30px;
+}
+
+.isMobile .cards__item--buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isMobile .cards__item .price_all {
+  margin-bottom: -13px;
 }
 
 .page_404 {
@@ -2733,6 +2942,12 @@ h4 {
 
   .card {
     border-radius: 20px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .isMobile .cards__item .price_all {
+    font-size: 40px;
   }
 }
 

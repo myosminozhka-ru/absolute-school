@@ -151,6 +151,7 @@
             }
             .button--orange {
                 margin-top: 10px;
+                margin-bottom: 100px;
             }
             &--item {
                 display: flex;
@@ -164,7 +165,6 @@
                 flex-direction: column;
                 justify-content: space-between;
                 height: calc(100vh - 170px);
-                padding-bottom: 100px;
             }
         }
         &:before {
