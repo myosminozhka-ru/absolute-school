@@ -100,18 +100,38 @@
     .custom-checkbox {
         + div {
             &:before {
-                width: 50px;
-                height: 50px;
-                background: radial-gradient(105.9% 76% at 82% 24%, rgba(255, 255, 255, 0.4) 7.19%, rgba(207, 207, 207, 0.4) 59.08%, rgba(66, 66, 66, 0.4) 100%), #FFFFFF;
+                width: vw(50);
+                height: vw(50);
+                background: var(--background);
                 border-radius: 10px;
-                border: 2px solid #959595;
+                position: relative;
+                z-index: 2;
+                margin: 3px;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                background: radial-gradient(75.55% 97% at 86% 12%, rgba(255, 255, 255, 0.4) 0%, rgba(87, 87, 87, 0.088) 44.8%, rgba(66, 66, 66, 0.4) 84.38%) var(--background);
+                border-radius: 10px;
+                z-index: 0;
             }
         }
         &:checked {
             + div {
                 &:before {
                     border: 0;
-                    box-shadow: 0px 0px 0 5px rgba(21, 69, 102, 0.6);
+                    box-shadow: 0px 5px 20px rgba(21, 69, 102, 0.6);
+                }
+                &:after {
+                    top: -2px;
+                    bottom: -2px;
+                    left: -2px;
+                    right: -2px;
+                    background: radial-gradient(86.46% 111% at 86% 12%, rgba(255, 105, 95, 0) 0%, rgba(124, 121, 121, 0) 54.94%, rgba(66, 66, 66, 0) 78.15%), var(--background);
                 }
             }
         }

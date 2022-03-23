@@ -1,5 +1,3 @@
-
-
 .cards {
     &__item {
         background: #F7DD85;
@@ -10,6 +8,9 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
         &--l-side {
             max-width: vw(596);
             width: 100%;
@@ -35,6 +36,7 @@
             flex-wrap: wrap;
             .checkbox {
                 margin-right: 10px;
+                margin-bottom: 10px;
             }
         }
         &--size {
@@ -51,9 +53,15 @@
                 position: relative;
                 &__track {
                     background: #FFFFFF;
-                    padding: vw(85) vw(60);
+                    padding: vw(85) 0;
+                    width: 100%;
                     border-radius: vw(50);
                     filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1));
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
                 &__bullets {
                     position: relative;
@@ -62,6 +70,7 @@
                     > div {
                         padding: vw(20) vw(10);
                         background: #FFFFFF;
+                        cursor: pointer;
                         border-radius: vw(20);
                         filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.25));
                         opacity: 0.7;
@@ -106,6 +115,118 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    &__more {
+        > div {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: vw(150);
+        }
+    }
+}
+.isTablet {
+    .cards {
+        &__item {
+            &--l-side {
+                max-width: 49%;
+            }
+            &--r-side {
+                width: 49%;
+            }
+        }
+    }
+}
+.isMobile {
+    .cards {
+        &__more {
+            > div {
+                margin-top: 40px;
+                margin-bottom: 80px;
+            }
+        }
+        &__item {
+            margin-bottom: 20px;
+            padding: 20px;
+            padding-bottom: 30px;
+            flex-direction: column-reverse;
+            align-items: center;
+            &--l-side {
+                max-width: 100%;
+            }
+            &--title {
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            &--text {
+                margin-bottom: 20px;
+                font-size: 14px;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+            }
+            &--r-side {
+                width: 100%;
+                margin-bottom: 20px;
+                .glide {
+                    &__track {
+                        padding: 45px 0;
+                    }
+                    &__controls {
+                        display: none;
+                    }
+                    &__bullets {
+                        margin-top: 20px;
+                        background: #ECD27A;
+                        > div {
+                            picture {
+                                display: none;
+                            }
+                            width: 30px;
+                            height: 5px;
+                            border-radius: 0;
+                            background: none;
+                            padding: 0;
+                            &.glide__bullet--active {
+                                background: #85A833;
+                            }
+                        }
+                    }
+                    &__slide {
+                        padding: 0 32px;
+                    }
+                }
+            }
+            &--color-item {
+                overflow: hidden;
+                overflow-x: scroll;
+                margin-bottom: 20px;
+            }
+            &--colors {
+                margin-bottom: 5px;
+                width: max-content;
+                flex-wrap: nowrap;
+            }
+            &--size {
+                padding-left: 15px;
+                padding-right: 15px;
+                .checkbox {
+                    margin-right: 30px;
+                }
+            }
+            &--buttons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .price_all {
+                margin-bottom: -13px;
+                @media all and (max-width: 360px) {
+                    font-size: 40px;
                 }
             }
         }
