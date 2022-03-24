@@ -1,24 +1,44 @@
-<div class="tabs_blocks center-block">
+<div class="tabs_blocks center-block@@if (h1 === true) { orders_status}">
     <div class="tabs_blocks__l-side">
         <div class="tabs_blocks__buttons">
             <div class="tabs_blocks__item">
                 <div class="tabs_blocks__buttons--owf">
-                    @@include('../../components/buttons/buttons.html', {
-                        "type" : "white",
-                        "text" : "Развивающие игрушки"
-                    })
-                    @@include('../../components/buttons/buttons.html', {
-                        "type" : "white",
-                        "text" : "Книги"
-                    })
-                    @@include('../../components/buttons/buttons.html', {
-                        "type" : "white",
-                        "text" : "Одежда"
-                    })
-                    @@include('../../components/buttons/buttons.html', {
-                        "type" : "white",
-                        "text" : "Наушники"
-                    })
+                    @@if (main === true) {
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Развивающие игрушки"
+                        })
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Книги"
+                        })
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Одежда"
+                        })
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Наушники"
+                        })
+                    }
+                    @@if (h1 === true) {
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Оформлен"
+                        })
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Отменен"
+                        })
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Готов к выдаче"
+                        })
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "white",
+                            "text" : "Выдан"
+                        })
+                    }
                 </div>
             </div>
             @@include('../../components/buttons/buttons.html', {
@@ -28,16 +48,21 @@
         </div>
     </div>
     <div class="tabs_blocks__r-side">
-        <form action="">
-            @@include('../../components/forms/inputs/index.html', {
-                "type" : "orange",
-                "text" : "Введите что нужно найти",
-                "error" : false
-            })
-            @@include('../../components/buttons/buttons.html', {
-                "type" : "search",
-                "text" : "Поиск"
-            })
-        </form>
+        @@if (h1 === true) {
+            <h1>Мои заказы:</h1>
+        }
+        @@if (main === true) {
+            <form action="">
+                @@include('../../components/forms/inputs/index.html', {
+                    "type" : "orange",
+                    "text" : "Введите что нужно найти",
+                    "error" : false
+                })
+                @@include('../../components/buttons/buttons.html', {
+                    "type" : "search",
+                    "text" : "Поиск"
+                })
+            </form>
+        }
     </div>
 </div>

@@ -44,6 +44,15 @@
             justify-content: space-between;
         }
     }
+    &.orders_status {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        .tabs_blocks__r-side {
+            margin-left: 0;
+            margin-right: 55px;
+            max-width: 354px;
+        }
+    }
 }
 .isTablet, .isMobile {
     .tabs_blocks {

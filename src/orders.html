@@ -6,18 +6,18 @@
     <meta http-equiv="x-rim-auto-match" content="none">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Мои заказы</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
         @@include('blocks/modules/tabs_block/tabs_block.html', {
-            "main" : true,
-            "h1" : false
+            "main" : false,
+            "h1" : true
         })
         <content class="content">
-            @@include('blocks/modules/cards/cards.html', {})
+            @@include('blocks/modules/orders/orders.html', {})
         </content>
         @@include('blocks/modules/footer/footer.html', {})
     </div>
