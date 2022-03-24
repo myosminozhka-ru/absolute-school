@@ -1,123 +1,66 @@
 <div class="cards">
-    @@for (i=0; i < 5; i++) {
-        <div class="cards__item">
-            <div class="cards__item--l-side">
-                <h1 class="cards__item--title">Название в три слова 
-                    и максимум 2 строки</h1>
-                <div class="cards__item--text">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
-                <form action="">
-                    <div class="cards__item--color-item">
-                        <div class="cards__item--colors">
-                            <label class="checkbox check_standart"  style="--background: #ffffff;">
-                                <input class="custom-checkbox" type="radio" value="Белый">
-                                <div>Белый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #94D81F;">
-                                <input class="custom-checkbox" type="radio" value="Салатовый">
-                                <div>Салатовый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #28AB80;">
-                                <input class="custom-checkbox" type="radio" value="Зеленый">
-                                <div>Зеленый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #FF695F;">
-                                <input class="custom-checkbox" type="radio" value="Оранжевый">
-                                <div>Оранжевый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #EE1C1C;">
-                                <input class="custom-checkbox" type="radio" value="Красный">
-                                <div>Красный</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #124CF8;">
-                                <input class="custom-checkbox" type="radio" value="Синий">
-                                <div>Синий</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #12DBFF;">
-                                <input class="custom-checkbox" type="radio" value="Голубой">
-                                <div>Голубой</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #000000;">
-                                <input class="custom-checkbox" type="radio" value="Черный">
-                                <div>Черный</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #c4c4c4;">
-                                <input class="custom-checkbox" type="radio" value="Серый">
-                                <div>Серый</div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="cards__item--size">
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="XXL">
-                            <div>XXL</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="XL">
-                            <div>XL</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="L">
-                            <div>L</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="M">
-                            <div>M</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="S">
-                            <div>S</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="XS">
-                            <div>XS</div>
+    <div class="cards__item" v-for="product in cards.products" :key="product.index">
+        <div class="cards__item--l-side">
+            <h1 class="cards__item--title">{{ product.name }}</h1>
+            <div class="cards__item--text">{{ product.description }}</div>
+            <form action="">
+                <div class="cards__item--color-item">
+                    <div class="cards__item--colors">
+                        <label class="checkbox check_standart" v-for="color in product.colors" :key="color.index" :style="`--background: ${ color.color_code };`">
+                            <input class="custom-checkbox" type="radio" :value=" color.color_name ">
+                            <div>{{ color.color_name }}</div>
                         </label>
                     </div>
-                    <div class="cards__item--buttons">
-                        @@include('../../components/typografy/prices/index.html', {
-                            "type" : "price",
-                            "text" : "14 500"
-                        })
+                </div>
+                <div class="cards__item--size">
+                    <label class="checkbox check_size">
+                        <input class="custom-checkbox" type="radio" value="XXL">
+                        <div>XXL</div>
+                    </label>
+                </div>
+                <div class="cards__item--buttons">
+                    @@include('../../components/typografy/prices/index.html', {
+                        "type" : "price",
+                        "text" : "14 500"
+                    })
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "cart",
+                        "text" : "Добавить"
+                    })
+                </div>
+            </form>
+        </div>
+        <div class="cards__item--r-side">
+            <div class="glide cards__slider--js">
+                <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide" v-for="image in product.images" :key="image.index">
+                        <img :src="`@img/${image}`" alt="">
+                    </li>
+                </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <div v-for="(image,key) in product.images" :key="key" :data-glide-dir="`=${key}`">
+                        <img :src="`@img/${image}`" alt="">
+                    </div>
+                </div>
+                <div class="glide__controls" data-glide-el="controls">
+                    <div data-glide-dir="<">
                         @@include('../../components/buttons/buttons.html', {
-                            "type" : "cart",
-                            "text" : "Добавить"
+                            "type" : "slider_next",
+                            "text" : "/"
                         })
                     </div>
-                </form>
-            </div>
-            <div class="cards__item--r-side">
-                <div class="glide cards__slider--js">
-                    <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        @@for (i=0; i < 5; i++) {
-                            <li class="glide__slide">
-                                <img src="@img/shirt.png" alt="">
-                            </li>
-                        }
-                    </ul>
-                    </div>
-                    <div class="glide__bullets" data-glide-el="controls[nav]">
-                        @@for (i=0; i < 5; i++) {
-                            <div data-glide-dir="=`+ i +`"><img src="@img/shirt.png" alt=""></div>
-                        }
-                    </div>
-                    <div class="glide__controls" data-glide-el="controls">
-                        <div data-glide-dir="<">
-                            @@include('../../components/buttons/buttons.html', {
-                                "type" : "slider_next",
-                                "text" : "/"
-                            })
-                        </div>
-                        <div data-glide-dir=">">
-                            @@include('../../components/buttons/buttons.html', {
-                                "type" : "slider_next",
-                                "text" : "/"
-                            })
-                        </div>
+                    <div data-glide-dir=">">
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "slider_next",
+                            "text" : "/"
+                        })
                     </div>
                 </div>
             </div>
         </div>
-    }
+    </div>
     <div class="cards__more">
         @@include('../../components/buttons/buttons.html', {
             "type" : "more",

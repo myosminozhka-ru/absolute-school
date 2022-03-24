@@ -47,7 +47,10 @@ window.app = new Vue({
         },
         isTablet: function () {
             return this.sizes.window < this.sizes.tablet && this.sizes.window > this.sizes.mobile;
-        }
+        },
+        // mainProducts: function () {
+        //     return this.cards.products;
+        // }
     },
     methods: {
         addClassToWrapper(nameOfClass) {

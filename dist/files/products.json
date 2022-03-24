@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Товар №1",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#000",
+                "color_name": "Черный"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    },
+    {
+        "name": "Товар №2",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#000",
+                "color_name": "Черный"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    },
+    {
+        "name": "Товар №3",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#000",
+                "color_name": "Черный"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    },
+    {
+        "name": "Товар №4",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#000",
+                "color_name": "Черный"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    }
+]
