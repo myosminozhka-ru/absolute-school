@@ -706,6 +706,44 @@ img {
   z-index: 1;
 }
 
+.button--search {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--search span {
+  display: none;
+}
+
+.button--search svg {
+  width: 5.2083333333vw;
+  height: 5.2083333333vw;
+  filter: drop-shadow(0px 9px 0px #6A8626);
+  transition: all 0.3s ease-out;
+}
+
+.button--search svg path {
+  transition: all 0.3s ease-out;
+}
+
+.button--search:hover svg {
+  filter: drop-shadow(0px 0px 0px #6A8626);
+}
+
+.button--search:active svg {
+  filter: drop-shadow(0px 0px 0px #6A8626);
+}
+
+.button--search:active svg path:nth-child(1) {
+  fill: #9DC739;
+}
+
 .button--green {
   position: relative;
   width: -webkit-max-content;
@@ -836,7 +874,7 @@ img {
 
 .button--white:hover,
 .button--white:active {
-  box-shadow: 0px 0.8854166667vw 1.5625vw rgba(230, 119, 31, 0.2);
+  box-shadow: 0px 0.3645833333vw 1.5625vw rgba(230, 119, 31, 0.2);
 }
 
 .button--order {
@@ -1517,6 +1555,12 @@ img {
   fill: #F8A846;
 }
 
+.isTablet .button--search svg,
+.isMobile .button--search svg {
+  width: 53px;
+  height: 53px;
+}
+
 .isTablet .button--green span,
 .isMobile .button--green span {
   font-size: 16px;
@@ -1528,6 +1572,11 @@ img {
 .isMobile .button--green:before {
   bottom: -9px;
   border-radius: 5px 5px 10px 5px;
+}
+
+.isTablet .button--green:hover:before,
+.isMobile .button--green:hover:before {
+  bottom: 0;
 }
 
 .isTablet .button--orange span,
@@ -1796,7 +1845,7 @@ img {
   border-radius: 5px 19% 19% 14%;
   right: 0;
   background: #6A8626;
-  bottom: -9px;
+  bottom: -0.46875vw;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -1810,7 +1859,7 @@ img {
   border-radius: 5px 19% 19% 14%;
   text-align: center;
   width: 100%;
-  padding: 30px 10px;
+  padding: 1.5625vw 0.5208333333vw;
   border: 0;
   position: relative;
   z-index: 1;
@@ -1818,7 +1867,7 @@ img {
   font-family: "Gilroy", serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.0416666667vw;
   line-height: 160%;
   -webkit-clip-path: polygon(0% 0%, 100% 15%, 100% 86%, 1% 94%);
   clip-path: polygon(0% 0%, 100% 15%, 100% 86%, 1% 94%);
@@ -1828,7 +1877,7 @@ img {
   font-family: "Gilroy", serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.0416666667vw;
   line-height: 160%;
   color: #919191;
 }
@@ -1837,7 +1886,7 @@ img {
   font-family: "Gilroy", serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.0416666667vw;
   line-height: 160%;
   color: #919191;
 }
@@ -1846,7 +1895,7 @@ img {
   font-family: "Gilroy", serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.0416666667vw;
   line-height: 160%;
   color: #919191;
 }
@@ -2398,6 +2447,132 @@ h4 {
 
 .isMobile .header__info {
   max-width: 165px;
+}
+
+.tabs_blocks {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.2395833333vw;
+}
+
+.tabs_blocks__l-side {
+  width: calc(100% - 84px - 25vw);
+}
+
+.tabs_blocks__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.tabs_blocks__buttons--owf {
+  display: flex;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.tabs_blocks__buttons .button {
+  margin-right: 9px;
+}
+
+.tabs_blocks__item {
+  overflow: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.tabs_blocks__r-side {
+  max-width: 25vw;
+  margin-left: 84px;
+  width: 100%;
+}
+
+.tabs_blocks__r-side .input {
+  margin-right: 7px;
+  width: 19.2708333333vw;
+}
+
+.tabs_blocks__r-side .input input {
+  -webkit-clip-path: polygon(0% 0%, 100% 7%, 100% 86%, 1% 94%);
+  clip-path: polygon(0% 0%, 100% 7%, 100% 86%, 1% 94%);
+  border-radius: 5px 13% 19% 14%;
+}
+
+.tabs_blocks__r-side form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isTablet .tabs_blocks,
+.isMobile .tabs_blocks {
+  margin-bottom: 40px;
+}
+
+.isTablet .tabs_blocks__l-side,
+.isMobile .tabs_blocks__l-side {
+  width: calc(100% - 30px - 344px);
+}
+
+.isTablet .tabs_blocks__r-side,
+.isMobile .tabs_blocks__r-side {
+  margin-left: 30px;
+  max-width: 344px;
+  width: 100%;
+}
+
+.isTablet .tabs_blocks__r-side .input,
+.isMobile .tabs_blocks__r-side .input {
+  width: 284px;
+}
+
+.isMobile .tabs_blocks {
+  flex-direction: column;
+}
+
+.isMobile .tabs_blocks__l-side {
+  width: 100%;
+}
+
+.isMobile .tabs_blocks__buttons {
+  flex-direction: row-reverse;
+  width: calc(100% + 15px);
+  position: relative;
+}
+
+.isMobile .tabs_blocks__buttons .button {
+  margin-right: 10px;
+}
+
+.isMobile .tabs_blocks__buttons:before {
+  content: "";
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(270deg, #FFF9E4 40.91%, rgba(255, 249, 228, 0.57) 72.13%, rgba(255, 253, 247, 0) 100%);
+  width: 20px;
+  height: 100%;
+  z-index: 3;
+}
+
+.isMobile .tabs_blocks__r-side {
+  max-width: 100%;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.isMobile .tabs_blocks__r-side .input {
+  max-width: calc(100% - 60px);
+  width: 100%;
+}
+
+.isMobile .tabs_blocks__r-side .input:before {
+  bottom: -9px;
 }
 
 .cards__item {

@@ -1,0 +1,43 @@
+<div class="tabs_blocks center-block">
+    <div class="tabs_blocks__l-side">
+        <div class="tabs_blocks__buttons">
+            <div class="tabs_blocks__item">
+                <div class="tabs_blocks__buttons--owf">
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "white",
+                        "text" : "Развивающие игрушки"
+                    })
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "white",
+                        "text" : "Книги"
+                    })
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "white",
+                        "text" : "Одежда"
+                    })
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "white",
+                        "text" : "Наушники"
+                    })
+                </div>
+            </div>
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "green",
+                "text" : "Все"
+            })
+        </div>
+    </div>
+    <div class="tabs_blocks__r-side">
+        <form action="">
+            @@include('../../components/forms/inputs/index.html', {
+                "type" : "orange",
+                "text" : "Введите что нужно найти",
+                "error" : false
+            })
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "search",
+                "text" : "Поиск"
+            })
+        </form>
+    </div>
+</div>
