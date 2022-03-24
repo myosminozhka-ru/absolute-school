@@ -7,16 +7,18 @@
                 <div class="cards__item--color-item">
                     <div class="cards__item--colors">
                         <label class="checkbox check_standart" v-for="color in product.colors" :key="color.index" :style="`--background: ${ color.color_code };`">
-                            <input class="custom-checkbox" type="radio" :value=" color.color_name ">
+                            <input class="custom-checkbox" type="radio" name="color" :value=" color.color_name ">
                             <div>{{ color.color_name }}</div>
                         </label>
                     </div>
                 </div>
-                <div class="cards__item--size">
-                    <label class="checkbox check_size">
-                        <input class="custom-checkbox" type="radio" value="XXL">
-                        <div>XXL</div>
-                    </label>
+                <div class="cards__item--size-item">
+                    <div class="cards__item--size">
+                        <label class="checkbox check_size" v-for="size in product.sizes" :key="size.index">
+                            <input class="custom-checkbox" type="radio" name="size" :value=" size ">
+                            <div>{{ size }}</div>
+                        </label>
+                    </div>
                 </div>
                 <div class="cards__item--buttons">
                     @@include('../../components/typografy/prices/index.html', {

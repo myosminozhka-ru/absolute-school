@@ -451,6 +451,9 @@
             path {
                 transition: all .3s ease-out;
             }
+            &.mob_icon {
+                display: none;
+            }
         }
         &:hover {
             svg {
@@ -861,6 +864,14 @@
             font-size: 20px;
             width: 203px;
             padding: 14px 10px;
+            svg {
+                &.desc_icon {
+                    display: none;
+                }
+                &.mob_icon {
+                    display: block;
+                }
+            }
         }
         &--back {
             font-size: 20px;

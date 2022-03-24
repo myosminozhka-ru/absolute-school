@@ -561,8 +561,8 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("../fonts/Gilroy-BlackItalic.woff") format("woff"), url("../fonts/Gilroy-BlackItalic.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
+  font-weight: 800;
 }
 
 @font-face {
@@ -575,43 +575,8 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-HeavyItalic.woff2") format("woff2"), url("../fonts/Gilroy-HeavyItalic.woff") format("woff"), url("../fonts/Gilroy-HeavyItalic.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-ExtraboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-ExtraboldItalic.woff") format("woff"), url("../fonts/Gilroy-ExtraboldItalic.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
   src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
   font-weight: 800;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-LightItalic.woff2") format("woff2"), url("../fonts/Gilroy-LightItalic.woff") format("woff"), url("../fonts/Gilroy-LightItalic.ttf") format("ttf");
-  font-weight: 400;
 }
 
 @font-face {
@@ -624,21 +589,7 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-MediumItalic.woff2") format("woff2"), url("../fonts/Gilroy-MediumItalic.woff") format("woff"), url("../fonts/Gilroy-MediumItalic.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("../fonts/Gilroy-RegularItalic.woff") format("woff"), url("../fonts/Gilroy-RegularItalic.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -650,44 +601,9 @@ template {
 }
 
 @font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("../fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("../fonts/Gilroy-SemiboldItalic.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Thin.woff2") format("woff2"), url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.ttf") format("ttf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-ThinItalic.woff2") format("woff2"), url("../fonts/Gilroy-ThinItalic.woff") format("woff"), url("../fonts/Gilroy-ThinItalic.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-UltraLight.woff2") format("woff2"), url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
   font-family: "Jingleberry";
   font-display: swap;
   src: url("../fonts/Jingleberry.woff2") format("woff2"), url("../fonts/Jingleberry.woff") format("woff"), url("../fonts/Jingleberry.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("../fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("../fonts/Gilroy-UltraLightItalic.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -751,6 +667,10 @@ body {
   flex: 1 0 auto;
   position: relative;
   z-index: 2;
+}
+
+.content h1 {
+  margin-top: 0.3645833333vw;
 }
 
 .footer {
@@ -1300,6 +1220,10 @@ img {
   transition: all 0.3s ease-out;
 }
 
+.button--checkout svg.mob_icon {
+  display: none;
+}
+
 .button--checkout:hover svg {
   filter: drop-shadow(0px 0px 0px #AD7026);
 }
@@ -1779,6 +1703,16 @@ img {
   font-size: 20px;
   width: 203px;
   padding: 14px 10px;
+}
+
+.isTablet .button--checkout svg.desc_icon,
+.isMobile .button--checkout svg.desc_icon {
+  display: none;
+}
+
+.isTablet .button--checkout svg.mob_icon,
+.isMobile .button--checkout svg.mob_icon {
+  display: block;
 }
 
 .isTablet .button--back,
@@ -2671,7 +2605,7 @@ h4 {
   padding: 0;
 }
 
-.isMobile .cards__item--r-side .glide__bullets > div picture {
+.isMobile .cards__item--r-side .glide__bullets > div img {
   display: none;
 }
 
@@ -2687,9 +2621,25 @@ h4 {
   overflow: hidden;
   overflow-x: scroll;
   margin-bottom: 20px;
+  padding-top: 2px;
+}
+
+.isMobile .cards__item--size-item {
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-bottom: 20px;
+  padding-top: 2px;
 }
 
 .isMobile .cards__item--colors {
+  margin-bottom: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+}
+
+.isMobile .cards__item--size {
   margin-bottom: 5px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -2714,6 +2664,445 @@ h4 {
 
 .isMobile .cards__item .price_all {
   margin-bottom: -13px;
+}
+
+.cart {
+  display: flex;
+  margin-top: 2.6041666667vw;
+  margin-bottom: 7.8125vw;
+}
+
+.cart__l-side {
+  width: 100%;
+  padding-right: 6.7708333333vw;
+}
+
+.cart__r-side {
+  flex: none;
+  max-width: 22.3958333333vw;
+  width: 100%;
+}
+
+.cart__total {
+  background: #F7DD85;
+  border: 3px solid rgba(254, 168, 64, 0.3);
+  box-shadow: 0px 70px 60px -60px #CCAD86, inset 0px -16px 29px rgba(151, 113, 65, 0.2), inset 0px 10px 20px rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 2.8125vw 1.5625vw;
+  padding-bottom: 2.3958333333vw;
+}
+
+.cart__total--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.5625vw;
+  padding-bottom: 1.3020833333vw;
+}
+
+.cart__total--title {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.0416666667vw;
+  color: #424242;
+}
+
+.cart__total--text {
+  font-family: "Jingleberry", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5625vw;
+  text-align: right;
+  color: #424242;
+}
+
+.cart__total--text .price_all {
+  line-height: normal;
+  font-size: inherit;
+}
+
+.cart__total--text .price_all svg {
+  width: 0.8333333333vw;
+  height: 0.8333333333vw;
+  bottom: 0;
+}
+
+.cart__total--text .price_all span {
+  font-size: 1.5625vw;
+}
+
+.cart__total--totals {
+  margin-top: 0.5208333333vw;
+  background: #F9D14B;
+  box-shadow: 0px 70px 60px -60px #CCAD86, inset 0px -16px 29px rgba(151, 113, 65, 0.2), inset 0px 10px 20px rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 2.4479166667vw 1.3541666667vw;
+  padding-bottom: 1.875vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5625vw;
+}
+
+.cart__total--t-title {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  color: #424242;
+}
+
+.cart__total--t-text .price_all {
+  line-height: normal;
+  font-size: inherit;
+}
+
+.cart__total--t-text .price_all svg {
+  width: 1.5625vw;
+  height: 1.5625vw;
+  bottom: 0;
+}
+
+.cart__total--t-text .price_all span {
+  font-size: 2.6041666667vw;
+}
+
+.cart__total .button--checkout {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart__product {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3.5416666667vw;
+}
+
+.cart__product--img {
+  max-width: 17.1875vw;
+  width: 100%;
+  flex: none;
+  margin-right: 2.0833333333vw;
+  background: #FFFFFF;
+  border-radius: 30px;
+  position: relative;
+  filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1));
+  padding: 3.1770833333vw 1.7708333333vw;
+}
+
+.cart__product .button--close {
+  position: absolute;
+  top: -1.4583333333vw;
+  right: -1.3020833333vw;
+}
+
+.cart__product--info {
+  max-width: 310px;
+  width: 100%;
+  flex: none;
+  margin-right: 2.0833333333vw;
+}
+
+.cart__product--info h2 {
+  margin-bottom: 0.5208333333vw;
+}
+
+.cart__product--text {
+  font-family: "Gilroy", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7291666667vw;
+  line-height: 160%;
+  text-transform: lowercase;
+  color: #686868;
+  margin-bottom: 1.3541666667vw;
+}
+
+.cart__product--check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.0729166667vw;
+}
+
+.cart__product--check .checkbox {
+  margin-right: 1.4583333333vw;
+  pointer-events: none;
+}
+
+.cart__product--check .check_standart .custom-checkbox + div:before {
+  width: 2.0833333333vw;
+  height: 2.0833333333vw;
+}
+
+.cart__product--check .check_size {
+  font-size: 1.8229166667vw;
+}
+
+.cart__product--minus {
+  margin-right: 0.7291666667vw;
+  font-family: "Jingleberry";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #85A833;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  min-height: 2.7604166667vw;
+  padding: 0;
+}
+
+.cart__product--plus {
+  margin-left: 0.8333333333vw;
+  font-family: "Jingleberry";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #85A833;
+  border: 0;
+  background: none;
+  min-height: 2.7604166667vw;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cart__product--price {
+  padding-top: 12px;
+  max-width: 120px;
+  width: 100%;
+  flex: none;
+}
+
+.cart__product--price .price_all {
+  font-size: inherit;
+  line-height: normal;
+}
+
+.cart__product--price .price_all svg {
+  width: 0.8333333333vw;
+  height: 0.8333333333vw;
+  bottom: 0;
+}
+
+.cart__product--price .price_all span {
+  font-size: 2.0833333333vw;
+}
+
+.isTablet .cart,
+.isMobile .cart {
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.isTablet .cart .button--close,
+.isMobile .cart .button--close {
+  top: -15px;
+  right: -15px;
+}
+
+.isTablet .cart__l-side,
+.isMobile .cart__l-side {
+  width: 100%;
+  padding-right: 0;
+}
+
+.isTablet .cart__r-side,
+.isMobile .cart__r-side {
+  max-width: 345px;
+}
+
+.isTablet .cart .button--close,
+.isMobile .cart .button--close {
+  width: 30px;
+  height: 30px;
+}
+
+.isTablet .cart__product,
+.isMobile .cart__product {
+  margin-bottom: 30px;
+}
+
+.isTablet .cart__product--img,
+.isMobile .cart__product--img {
+  margin-right: 20px;
+}
+
+.isTablet .cart__product--info,
+.isMobile .cart__product--info {
+  max-width: calc(100% - 150px - 17.1875vw);
+}
+
+.isTablet .cart__product--info h2,
+.isMobile .cart__product--info h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.isTablet .cart__product--text,
+.isMobile .cart__product--text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.isTablet .cart__product--price,
+.isMobile .cart__product--price {
+  padding-top: 0;
+}
+
+.isTablet .cart__product--price .price_all svg,
+.isMobile .cart__product--price .price_all svg {
+  width: 14px;
+  height: 14px;
+}
+
+.isTablet .cart__product--price .price_all span,
+.isMobile .cart__product--price .price_all span {
+  font-size: 30px;
+}
+
+.isTablet .cart__product--check,
+.isMobile .cart__product--check {
+  margin-bottom: 20px;
+}
+
+.isTablet .cart__product--check .checkbox,
+.isMobile .cart__product--check .checkbox {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isTablet .cart__product--check .checkbox.check_size,
+.isMobile .cart__product--check .checkbox.check_size {
+  font-size: 20px;
+}
+
+.isTablet .cart__product--check .check_standart .custom-checkbox + div:before,
+.isMobile .cart__product--check .check_standart .custom-checkbox + div:before {
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+.isTablet .cart__product--check .cart__product--check .check_size,
+.isMobile .cart__product--check .cart__product--check .check_size {
+  height: 30px;
+}
+
+.isTablet .cart__product--minus,
+.isMobile .cart__product--minus {
+  height: 39px;
+  margin-right: 14px;
+}
+
+.isTablet .cart__product--plus,
+.isMobile .cart__product--plus {
+  margin-left: 17px;
+  height: 39px;
+}
+
+.isTablet .cart__product--amount,
+.isMobile .cart__product--amount {
+  display: flex;
+  align-items: center;
+}
+
+.isTablet .cart__product .product_amount,
+.isMobile .cart__product .product_amount {
+  font-size: 18px;
+  height: 39px;
+}
+
+.isTablet .cart__total,
+.isMobile .cart__total {
+  border-radius: 20px;
+  padding: 20px 16px;
+  padding-bottom: 40px;
+}
+
+.isTablet .cart__total--block,
+.isMobile .cart__total--block {
+  padding: 0;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+
+.isTablet .cart__total--title,
+.isMobile .cart__total--title {
+  font-size: 14px;
+}
+
+.isTablet .cart__total--text,
+.isMobile .cart__total--text {
+  font-size: 30px;
+}
+
+.isTablet .cart__total--text .price_all svg,
+.isMobile .cart__total--text .price_all svg {
+  width: 14px;
+  height: 14px;
+}
+
+.isTablet .cart__total--text .price_all span,
+.isMobile .cart__total--text .price_all span {
+  font-size: 30px;
+}
+
+.isTablet .cart__total--totals,
+.isMobile .cart__total--totals {
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 24px 19px;
+  margin-bottom: 30px;
+}
+
+.isTablet .cart__total--t-title,
+.isMobile .cart__total--t-title {
+  font-size: 20px;
+}
+
+.isTablet .cart__total--t-text .price_all svg,
+.isMobile .cart__total--t-text .price_all svg {
+  width: 18px;
+  height: 18px;
+}
+
+.isTablet .cart__total--t-text .price_all span,
+.isMobile .cart__total--t-text .price_all span {
+  font-size: 40px;
+}
+
+.isMobile .cart__product {
+  flex-wrap: wrap;
+}
+
+.isMobile .cart__product--img {
+  max-width: 122px;
+  margin-right: 25px;
+  filter: unset;
+  background: transparent;
+}
+
+.isMobile .cart__product--info {
+  max-width: calc(100% - 122px - 25px);
+  margin-right: 0;
+}
+
+.isMobile .cart__product--price {
+  max-width: 100%;
+  padding-left: 147px;
+  margin-top: 20px;
 }
 
 .page_404 {
@@ -2942,6 +3331,26 @@ h4 {
 
   .card {
     border-radius: 20px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .isMobile .cart__r-side {
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .isMobile .cart__product--img {
+    max-width: 100px;
+  }
+
+  .isMobile .cart__product--info {
+    max-width: calc(100% - 125px);
+  }
+
+  .isMobile .cart__product--price {
+    padding-left: 125px;
   }
 }
 

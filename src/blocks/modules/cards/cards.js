@@ -6,7 +6,6 @@ const Cards = class Cards {
         this.sliderOptions = sliderOptions;
         this.products = [];
         this.sliders = [];
-        // this.slider = new Glide('.cards__slider--js', sliderOptions);
     }
     fetchProducts() {
         axios.get('files/products.json').then((products) => {

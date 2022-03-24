@@ -183,7 +183,7 @@
                         margin-top: 20px;
                         background: #ECD27A;
                         > div {
-                            picture {
+                            img {
                                 display: none;
                             }
                             width: 30px;
@@ -205,8 +205,20 @@
                 overflow: hidden;
                 overflow-x: scroll;
                 margin-bottom: 20px;
+                padding-top: 2px;
+            }
+            &--size-item {
+                overflow: hidden;
+                overflow-x: scroll;
+                margin-bottom: 20px;
+                padding-top: 2px;
             }
             &--colors {
+                margin-bottom: 5px;
+                width: max-content;
+                flex-wrap: nowrap;
+            }
+            &--size {
                 margin-bottom: 5px;
                 width: max-content;
                 flex-wrap: nowrap;
