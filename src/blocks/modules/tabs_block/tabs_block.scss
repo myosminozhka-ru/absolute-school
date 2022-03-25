@@ -47,6 +47,10 @@
     &.orders_status {
         flex-direction: row-reverse;
         justify-content: flex-end;
+        h1 {
+            max-width: vw(550);
+            width: 100%;
+        }
         .tabs_blocks__r-side {
             margin-left: 0;
             margin-right: 55px;
@@ -66,6 +70,11 @@
             width: 100%;
             .input {
                 width: 284px;
+            }
+        }
+        &.orders_status {
+            .tabs_blocks__l-side {
+                width: calc(100% - 330px);
             }
         }
     }
@@ -105,6 +114,24 @@
                 &:before {
                     bottom: -9px;
                 }
+            }
+        }
+        &.orders_status {
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            h1 {
+                margin-bottom: 15px;
+            }
+            .tabs_blocks__l-side {
+                width: 100%;
+            }
+            .tabs_blocks__r-side {
+                max-width: 100%;
+                margin-right: 0;
+                margin-top: 0;
+            }
+            .tabs_blocks__buttons {
+                justify-content: flex-end;
             }
         }
     }

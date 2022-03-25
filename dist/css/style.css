@@ -554,6 +554,13 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
   src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
   font-weight: 900;
 }
@@ -563,13 +570,6 @@ template {
   font-display: swap;
   src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
   font-weight: 800;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-  font-weight: 700;
 }
 
 @font-face {
@@ -2513,6 +2513,11 @@ h4 {
   justify-content: flex-end;
 }
 
+.tabs_blocks.orders_status h1 {
+  max-width: 28.6458333333vw;
+  width: 100%;
+}
+
 .tabs_blocks.orders_status .tabs_blocks__r-side {
   margin-left: 0;
   margin-right: 55px;
@@ -2539,6 +2544,11 @@ h4 {
 .isTablet .tabs_blocks__r-side .input,
 .isMobile .tabs_blocks__r-side .input {
   width: 284px;
+}
+
+.isTablet .tabs_blocks.orders_status .tabs_blocks__l-side,
+.isMobile .tabs_blocks.orders_status .tabs_blocks__l-side {
+  width: calc(100% - 330px);
 }
 
 .isMobile .tabs_blocks {
@@ -2584,6 +2594,29 @@ h4 {
 
 .isMobile .tabs_blocks__r-side .input:before {
   bottom: -9px;
+}
+
+.isMobile .tabs_blocks.orders_status {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.isMobile .tabs_blocks.orders_status h1 {
+  margin-bottom: 15px;
+}
+
+.isMobile .tabs_blocks.orders_status .tabs_blocks__l-side {
+  width: 100%;
+}
+
+.isMobile .tabs_blocks.orders_status .tabs_blocks__r-side {
+  max-width: 100%;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.isMobile .tabs_blocks.orders_status .tabs_blocks__buttons {
+  justify-content: flex-end;
 }
 
 .cards__item {
@@ -3449,6 +3482,12 @@ h4 {
 
 .isMobile .footer__in img {
   max-width: 82px;
+}
+
+@media all and (min-width: 1980px) {
+  .center-block {
+    max-width: 72.9166666667vw;
+  }
 }
 
 @media all and (max-width: 1023px) {
