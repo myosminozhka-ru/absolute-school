@@ -6,22 +6,66 @@
             <div class="orders__block--status">Оформлен</div>
         </div>
         <div class="orders__block--info">
-            <div class="orders__block--img"><img src="@img/shirt.png" alt=""></div>
-            <div class="orders__block--text">
-                @@include('../../components/typografy/hn/index.html', {
-                    "type" : "h2",
-                    "text" : "Название в три слова и максимум 2 строки"
-                })
-                <div class="orders__block-description">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
-                @@include('../../components/typografy/prices/index.html', {
-                    "type" : "price",
-                    "text" : "14 500"
-                })
+            <div class="orders__block--card">
+                <div class="orders__block--img"><img src="@img/shirt.png" alt=""></div>
+                <div class="orders__block--item">
+                    <div class="orders__block--text">
+                        @@include('../../components/typografy/hn/index.html', {
+                            "type" : "h2",
+                            "text" : "Название в три слова и максимум 2 строки"
+                        })
+                        <div class="orders__block--description">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
+                        <div class="orders__block--amount mob">
+                            @@include('../../components/typografy/prices/index.html', {
+                                "type" : "prod_amount",
+                                "text" : "1шт."
+                            })
+                        </div>
+                        @@include('../../components/typografy/prices/index.html', {
+                            "type" : "price",
+                            "text" : "14 500"
+                        })
+                    </div>
+                    <div class="orders__block--amount">
+                        @@include('../../components/typografy/prices/index.html', {
+                            "type" : "prod_amount",
+                            "text" : "1шт."
+                        })
+                    </div>
+                </div>
             </div>
-            <div class="orders__block--amount">
-                @@include('../../components/typografy/prices/index.html', {
-                    "type" : "prod_amount",
-                    "text" : "1шт."
+            <div class="orders__block--card">
+                <div class="orders__block--img"><img src="@img/shirt.png" alt=""></div>
+                <div class="orders__block--item">
+                    <div class="orders__block--text">
+                        @@include('../../components/typografy/hn/index.html', {
+                            "type" : "h2",
+                            "text" : "Название в три слова и максимум 2 строки"
+                        })
+                        <div class="orders__block--description">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
+                        <div class="orders__block--amount mob">
+                            @@include('../../components/typografy/prices/index.html', {
+                                "type" : "prod_amount",
+                                "text" : "1шт."
+                            })
+                        </div>
+                        @@include('../../components/typografy/prices/index.html', {
+                            "type" : "price",
+                            "text" : "14 500"
+                        })
+                    </div>
+                    <div class="orders__block--amount">
+                        @@include('../../components/typografy/prices/index.html', {
+                            "type" : "prod_amount",
+                            "text" : "1шт."
+                        })
+                    </div>
+                </div>
+            </div>
+            <div class="orders__block--repeat-mob">
+                @@include('../../components/buttons/buttons.html', {
+                    "type" : "orange",
+                    "text" : "Повторить"
                 })
             </div>
         </div>
@@ -36,7 +80,14 @@
                     "type" : "orange",
                     "text" : "Повторить"
                 })
+                <div class="orders__block--more">Подробней</div>
             </div>
         </div>
+    </div>
+    <div class="orders__more">
+        @@include('../../components/buttons/buttons.html', {
+            "type" : "more",
+            "text" : "показать еще"
+        })
     </div>
 </div>
