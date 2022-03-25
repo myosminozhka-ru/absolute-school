@@ -554,13 +554,6 @@ template {
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
   src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
   font-weight: 900;
 }
@@ -605,6 +598,13 @@ template {
   font-display: swap;
   src: url("../fonts/Jingleberry.woff2") format("woff2"), url("../fonts/Jingleberry.woff") format("woff"), url("../fonts/Jingleberry.ttf") format("ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
 }
 
 body {
@@ -2883,6 +2883,21 @@ h4 {
 
 .isMobile .cards__item .price_all {
   margin-bottom: -13px;
+}
+
+.orders__block {
+  background: #F7DD85;
+  border: 3px solid rgba(254, 168, 64, 0.3);
+  box-shadow: 0px 70px 60px -60px #CCAD86, inset 0px -16px 29px rgba(151, 113, 65, 0.2), inset 0px 10px 20px rgba(255, 255, 255, 0.15);
+  border-radius: 1.5625vw;
+  padding: 2.0833333333vw 3.125vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.isTablet .orders__block,
+.isMobile .orders__block {
+  border-radius: 20px;
 }
 
 .cart {

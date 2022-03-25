@@ -1,12 +1,6 @@
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-	font-weight: 700;
-}
-@font-face {
-	font-family: "Gilroy";
-	font-display: swap;
 	src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
 	font-weight: 900;
 }
@@ -45,4 +39,10 @@
 	font-display: swap;
 	src: url("../fonts/Jingleberry.woff2") format("woff2"), url("../fonts/Jingleberry.woff") format("woff"), url("../fonts/Jingleberry.ttf") format("ttf");
 	font-weight: 400;
+}
+@font-face {
+	font-family: "Gilroy";
+	font-display: swap;
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+	font-weight: 700;
 }
