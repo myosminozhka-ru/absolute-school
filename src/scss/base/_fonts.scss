@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
-	font-weight: 900;
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+	font-weight: 700;
 }
 @font-face {
 	font-family: "Gilroy";
@@ -13,20 +13,20 @@
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
-	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-	font-weight: 700;
-}
-@font-face {
-	font-family: "Gilroy";
-	font-display: swap;
-	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
-	font-weight: 800;
+	src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.ttf") format("ttf");
+	font-weight: 900;
 }
 @font-face {
 	font-family: "Gilroy";
 	font-display: swap;
 	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("ttf");
 	font-weight: 500;
+}
+@font-face {
+	font-family: "Gilroy";
+	font-display: swap;
+	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
+	font-weight: 800;
 }
 @font-face {
 	font-family: "Gilroy";

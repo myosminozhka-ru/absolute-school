@@ -181,6 +181,9 @@
                 font-size: 14px;
             }
         }
+        &:before {
+            bottom: -9px;
+        }
     }
     .check_standart {
         .custom-checkbox+div:before {

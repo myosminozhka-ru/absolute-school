@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        <header class="header">
+
+        </header>
+        <content class="content">
+            @@include('blocks/modules/auth/auth.html', {})
+        </content>
+        <footer class="footer"></footer>
+    </div>
+    <script src="js/app.min.js"></script>
+    <script>
+        app.addClassToWrapper('auth');
+    </script>
+</body>
+</html>
