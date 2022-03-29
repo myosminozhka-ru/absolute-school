@@ -1,127 +1,87 @@
 <div class="cards">
-    @@for (i=0; i < 5; i++) {
-        <div class="cards__item">
-            <div class="cards__item--l-side">
-                <h1 class="cards__item--title">Название в три слова 
-                    и максимум 2 строки</h1>
-                <div class="cards__item--text">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
-                <form action="">
-                    <div class="cards__item--color-item">
-                        <div class="cards__item--colors">
-                            <label class="checkbox check_standart"  style="--background: #ffffff;">
-                                <input class="custom-checkbox" type="radio" value="Белый">
-                                <div>Белый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #94D81F;">
-                                <input class="custom-checkbox" type="radio" value="Салатовый">
-                                <div>Салатовый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #28AB80;">
-                                <input class="custom-checkbox" type="radio" value="Зеленый">
-                                <div>Зеленый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #FF695F;">
-                                <input class="custom-checkbox" type="radio" value="Оранжевый">
-                                <div>Оранжевый</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #EE1C1C;">
-                                <input class="custom-checkbox" type="radio" value="Красный">
-                                <div>Красный</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #124CF8;">
-                                <input class="custom-checkbox" type="radio" value="Синий">
-                                <div>Синий</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #12DBFF;">
-                                <input class="custom-checkbox" type="radio" value="Голубой">
-                                <div>Голубой</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #000000;">
-                                <input class="custom-checkbox" type="radio" value="Черный">
-                                <div>Черный</div>
-                            </label>
-                            <label class="checkbox check_standart"  style="--background: #c4c4c4;">
-                                <input class="custom-checkbox" type="radio" value="Серый">
-                                <div>Серый</div>
-                            </label>
-                        </div>
+    <div class="cards__item" v-for="product in products" :key="product.index">
+        <div class="cards__item--l-side">
+            <h1 class="cards__item--title">{{ product.name }}</h1>
+            <div class="cards__item--text">{{ product.description }}</div>
+            <form action="">
+                <div class="cards__item--color-item">
+                    <div class="cards__item--colors">
+                        <label class="checkbox check_standart" v-for="color in product.colors" :key="color.index" :style="`--background: ${ color.color_code };`">
+                            <input class="custom-checkbox" type="radio" name="color" :value=" color.color_name ">
+                            <div>{{ color.color_name }}</div>
+                        </label>
                     </div>
+                </div>
+                <div class="cards__item--size-item">
                     <div class="cards__item--size">
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="XXL">
-                            <div>XXL</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="XL">
-                            <div>XL</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="L">
-                            <div>L</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="M">
-                            <div>M</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="S">
-                            <div>S</div>
-                        </label>
-                        <label class="checkbox check_size">
-                            <input class="custom-checkbox" type="radio" value="XS">
-                            <div>XS</div>
+                        <label class="checkbox check_size" v-for="size in product.sizes" :key="size.index">
+                            <input class="custom-checkbox" type="radio" name="size" :value=" size ">
+                            <div>{{ size }}</div>
                         </label>
                     </div>
-                    <div class="cards__item--buttons">
-                        @@include('../../components/typografy/prices/index.html', {
-                            "type" : "price",
-                            "text" : "14 500"
-                        })
+                </div>
+                <div class="cards__item--buttons">
+                    @@include('../../components/typografy/prices/index.html', {
+                        "type" : "price",
+                        "text" : "14 500"
+                    })
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "cart",
+                        "text" : "Добавить"
+                    })
+                </div>
+            </form>
+        </div>
+        <div class="cards__item--r-side">
+            <div class="glide cards__slider--js">
+                <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide" v-for="image in product.images" :key="image.index">
+                        <img :src="`@img/${image}`" alt="">
+                    </li>
+                </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <div v-for="(image,key) in product.images" :key="key" :data-glide-dir="`=${key}`">
+                        <img :src="`@img/${image}`" alt="">
+                    </div>
+                </div>
+                <div class="glide__controls" data-glide-el="controls">
+                    <div data-glide-dir="<">
                         @@include('../../components/buttons/buttons.html', {
-                            "type" : "cart",
-                            "text" : "Добавить"
+                            "type" : "slider_next",
+                            "text" : "/"
                         })
                     </div>
-                </form>
-            </div>
-            <div class="cards__item--r-side">
-                <div class="glide cards__slider--js">
-                    <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        @@for (i=0; i < 5; i++) {
-                            <li class="glide__slide">
-                                <img src="@img/shirt.png" alt="">
-                            </li>
-                        }
-                    </ul>
-                    </div>
-                    <div class="glide__bullets" data-glide-el="controls[nav]">
-                        @@for (i=0; i < 5; i++) {
-                            <div data-glide-dir="=`+ i +`"><img src="@img/shirt.png" alt=""></div>
-                        }
-                    </div>
-                    <div class="glide__controls" data-glide-el="controls">
-                        <div data-glide-dir="<">
-                            @@include('../../components/buttons/buttons.html', {
-                                "type" : "slider_next",
-                                "text" : "/"
-                            })
-                        </div>
-                        <div data-glide-dir=">">
-                            @@include('../../components/buttons/buttons.html', {
-                                "type" : "slider_next",
-                                "text" : "/"
-                            })
-                        </div>
+                    <div data-glide-dir=">">
+                        @@include('../../components/buttons/buttons.html', {
+                            "type" : "slider_next",
+                            "text" : "/"
+                        })
                     </div>
                 </div>
             </div>
         </div>
-    }
+    </div>
     <div class="cards__more">
-        @@include('../../components/buttons/buttons.html', {
-            "type" : "more",
-            "text" : "показать еще"
-        })
+        <div class="button button--more" @click="cards.loadMore.apply(cards)">
+            <svg width="261" height="100" viewBox="0 0 261 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_227_7177)">
+                <path d="M5.68066 4.21286C5.68066 1.92233 7.60041 0.0995808 9.88787 0.218236L206.141 10.3982C206.54 10.4189 206.939 10.3797 207.327 10.2819L243.077 1.25693C245.604 0.619054 248.057 2.52918 248.057 5.13526V46.7196C248.057 47.0646 248.101 47.4081 248.189 47.7416L260.432 94.0672C261.17 96.8612 258.793 99.4921 255.939 99.04L169.456 85.3413C169.182 85.2979 168.904 85.2832 168.627 85.2972L4.74867 93.6238C2.269 93.7497 0.274768 91.6098 0.575049 89.1451L5.68066 47.2393V4.21286Z" fill="#85A832"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_227_7177" x="0.545044" y="0.212891" width="260.023" height="98.8779" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.415686 0 0 0 0 0.52549 0 0 0 0 0.14902 0 0 0 1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_227_7177"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_227_7177" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+            <span>Показать еще</span>
+        </div>
     </div>
 </div>

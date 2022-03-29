@@ -1,0 +1,202 @@
+[
+    {
+        "name": "Товар №5",
+        "type": "id1",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#94D81F",
+                "color_name": "Салатовый"
+            },
+            {
+                "color_code": "#28AB80",
+                "color_name": "Зеленый"
+            },
+            {
+                "color_code": "#FF695F",
+                "color_name": "Оранжевый"
+            },
+            {
+                "color_code": "#EE1C1C",
+                "color_name": "Красный"
+            },
+            {
+                "color_code": "#124CF8",
+                "color_name": "Синий"
+            },
+            {
+                "color_code": "#12DBFF",
+                "color_name": "Голубой"
+            },
+            {
+                "color_code": "#000000",
+                "color_name": "Черный"
+            },
+            {
+                "color_code": "#c4c4c4",
+                "color_name": "Серый"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl", "l", "m", "s", "xs"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    },
+    {
+        "name": "Товар №6",
+        "type": "id2",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#94D81F",
+                "color_name": "Салатовый"
+            },
+            {
+                "color_code": "#28AB80",
+                "color_name": "Зеленый"
+            },
+            {
+                "color_code": "#FF695F",
+                "color_name": "Оранжевый"
+            },
+            {
+                "color_code": "#EE1C1C",
+                "color_name": "Красный"
+            },
+            {
+                "color_code": "#124CF8",
+                "color_name": "Синий"
+            },
+            {
+                "color_code": "#12DBFF",
+                "color_name": "Голубой"
+            },
+            {
+                "color_code": "#000000",
+                "color_name": "Черный"
+            },
+            {
+                "color_code": "#c4c4c4",
+                "color_name": "Серый"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl", "l", "m", "s", "xs"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    },
+    {
+        "name": "Товар №7",
+        "type": "id3",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#94D81F",
+                "color_name": "Салатовый"
+            },
+            {
+                "color_code": "#28AB80",
+                "color_name": "Зеленый"
+            },
+            {
+                "color_code": "#FF695F",
+                "color_name": "Оранжевый"
+            },
+            {
+                "color_code": "#EE1C1C",
+                "color_name": "Красный"
+            },
+            {
+                "color_code": "#124CF8",
+                "color_name": "Синий"
+            },
+            {
+                "color_code": "#12DBFF",
+                "color_name": "Голубой"
+            },
+            {
+                "color_code": "#000000",
+                "color_name": "Черный"
+            },
+            {
+                "color_code": "#c4c4c4",
+                "color_name": "Серый"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl", "l", "m", "s", "xs"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    },
+    {
+        "name": "Товар №8",
+        "type": "id4",
+        "description": "белая футболка для занятий спортом (с принтом школы абсолют)белая футболка для занятий спортом (с принтом школы абсолют)",
+        "colors": [
+            {
+                "color_code": "#fff",
+                "color_name": "Белый"
+            },
+            {
+                "color_code": "#94D81F",
+                "color_name": "Салатовый"
+            },
+            {
+                "color_code": "#28AB80",
+                "color_name": "Зеленый"
+            },
+            {
+                "color_code": "#FF695F",
+                "color_name": "Оранжевый"
+            },
+            {
+                "color_code": "#EE1C1C",
+                "color_name": "Красный"
+            },
+            {
+                "color_code": "#124CF8",
+                "color_name": "Синий"
+            },
+            {
+                "color_code": "#12DBFF",
+                "color_name": "Голубой"
+            },
+            {
+                "color_code": "#000000",
+                "color_name": "Черный"
+            },
+            {
+                "color_code": "#c4c4c4",
+                "color_name": "Серый"
+            }
+        ],
+        "sizes": [
+            "xxl", "xl", "l", "m", "s", "xs"
+        ],
+        "price": "14 500",
+        "images": [
+            "shirt.png", "shirt.png", "shirt.png", "shirt.png", "shirt.png"
+        ]
+    }
+]

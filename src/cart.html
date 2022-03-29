@@ -12,10 +12,11 @@
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/modules/header/header.html', {})
-        <content class="content">
+        <content class="content center-block">
             @@include('blocks/modules/cart/cart.html', {})
         </content>
         @@include('blocks/modules/footer/footer.html', {})
+        @@include('blocks/modules/modals/main.modal.html', {})
     </div>
     <script src="js/app.min.js"></script>
 </body>

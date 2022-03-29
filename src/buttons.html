@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper" id="app">
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
         @@include('blocks/components/buttons/buttons.html', {
             "type" : "order",
             "text" : "Мои заказы"
@@ -74,6 +74,10 @@
         @@include('blocks/components/buttons/buttons.html', {
             "type" : "more",
             "text" : "показать еще"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "search",
+            "text" : "Поиск"
         })
     </div>
     <script src="js/app.min.js"></script>

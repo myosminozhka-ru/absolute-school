@@ -7,6 +7,10 @@
         max-width: 111px;
         width: 100%;
         margin-right: 30px;
+        display: block;
+        img {
+            pointer-events: none;
+        }
     }
     &__info {
         display: flex;
@@ -164,7 +168,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: calc(100vh - 170px);
+                height: calc(100vh - 200px);
             }
         }
         &:before {

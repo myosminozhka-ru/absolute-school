@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css?_v=20220324001304">
+    <link rel="stylesheet" href="css/style.css?_v=20220329105830">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -20,8 +20,9 @@
     </svg>
 </div>
         <header class="header center-block" :class="{'isOpened': mainHeader.isMobileMenuOpened}">
-    <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип"></picture></a>
-    <div class="button button--help">
+    <a href="/" class="header__logo"><img src="img/logo.png" alt="Логотип"></a>
+    <div class="button button--help" data-modal-id="3">
+    
     
     
     
@@ -39,23 +40,9 @@
     
     
     <span>Помощь</span>
-    
-    
 </div>
     
-    <div class="button button--order">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <span>Мои заказы</span>
+    <a href="/orders.html" class="buttons button--order">
     
         <svg width="78" height="68" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M72.4103 6.58791C74.6152 3.98928 72.7682 0 69.3602 0H9.39225C7.31296 0 5.58041 1.59306 5.40629 3.66505L0.424809 62.9448C0.208215 65.5222 2.45797 67.6245 5.01486 67.2338L67.8704 57.6309C70.1215 57.287 71.6318 55.1357 71.1904 52.9016L64.3738 18.3923C64.1376 17.1966 64.4594 15.9585 65.2479 15.0292L72.4103 6.58791Z" fill="#F7E085"/>
@@ -67,21 +54,9 @@
         </svg>
     
     
-</div>
-    
-    <div class="button button--cart_min">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <span>Корзина</span>
+    <span>Мои заказы</span>
+</a>
+    <a href="/cart.html" class="buttons button--cart_min">
     
     
         <div class="icon">
@@ -114,11 +89,11 @@
             </div>
         </div>
     
-</div>
-    
+    <span>Корзина</span>
+</a>
     <div class="header__info">
         <div class="header__info--img">
-            <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt="Владислав Фамильярный"></picture>
+            <img src="img/avatar.png" alt="Владислав Фамильярный">
         </div>
         <div class="header__info--text">
             <div class="header__info--name">Владислав Фамильярный</div>
@@ -150,13 +125,13 @@
     
     
     
+    
     <span>Выход</span>
-    
-    
 </div>
     
     <div class="menu_burger">
         <div class="button button--burger">
+    
     
     
         <svg width="58" height="50" viewBox="0 0 58 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,13 +169,12 @@
     
     
     <span>Меню</span>
-    
-    
 </div>
     
         <div class="menu_burger--body">
             <div class="menu_burger--item">
-                <div class="button button--help">
+                <div class="button button--help" data-modal-id="3">
+    
     
     
     
@@ -218,11 +192,10 @@
     
     
     <span>Помощь</span>
-    
-    
 </div>
     
                 <div class="button button--close">
+    
     
     
     
@@ -254,26 +227,12 @@
     
     
     <span>закрыть</span>
-    
-    
 </div>
     
             </div>
             <div class="menu_burger--items">
                 <div class="menu_burger--menu">
-                    <div class="button button--order">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <span>Мои заказы</span>
+                    <a href="/orders.html" class="buttons button--order">
     
         <svg width="78" height="68" viewBox="0 0 78 68" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M72.4103 6.58791C74.6152 3.98928 72.7682 0 69.3602 0H9.39225C7.31296 0 5.58041 1.59306 5.40629 3.66505L0.424809 62.9448C0.208215 65.5222 2.45797 67.6245 5.01486 67.2338L67.8704 57.6309C70.1215 57.287 71.6318 55.1357 71.1904 52.9016L64.3738 18.3923C64.1376 17.1966 64.4594 15.9585 65.2479 15.0292L72.4103 6.58791Z" fill="#F7E085"/>
@@ -285,21 +244,9 @@
         </svg>
     
     
-</div>
-    
-                    <div class="button button--cart_min">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <span>Корзина</span>
+    <span>Мои заказы</span>
+</a>
+                    <a href="/cart.html" class="buttons button--cart_min">
     
     
         <div class="icon">
@@ -332,8 +279,8 @@
             </div>
         </div>
     
-</div>
-      
+    <span>Корзина</span>
+</a>
                 </div> 
                 <div class="button button--orange">
     
@@ -347,9 +294,8 @@
     
     
     
+    
     <span>Выход</span>
-    
-    
 </div>
       
             </div>     
@@ -358,7 +304,7 @@
 </header>
         <content class="content">
             <div class="page_error">
-    <div class="page_error__image">
+    <div class="page_error__image" data-aos="zoom-in" data-aos-delay="300">
         <svg class="sub_small" width="62" height="65" viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M35.328 4.11053C34.6816 -1.37018 26.7268 -1.37018 26.0804 4.11053C25.6148 8.05885 20.7339 9.64474 18.0365 6.72417C14.2921 2.67009 7.85649 7.34584 10.5551 12.1597C12.4991 15.6277 9.48259 19.7796 5.58363 19.0023C0.171438 17.9234 -2.28674 25.4889 2.72599 27.7973C6.33718 29.4602 6.33718 34.5922 2.72599 36.2552C-2.28674 38.5635 0.171443 46.129 5.58363 45.0501C9.48259 44.2728 12.4991 48.4247 10.5551 51.8927C7.85649 56.7066 14.2921 61.3823 18.0365 57.3283C20.7339 54.4077 25.6148 55.9936 26.0804 59.9419C26.7268 65.4226 34.6816 65.4226 35.328 59.9419C35.7936 55.9936 40.6745 54.4077 43.3719 57.3283C47.1163 61.3823 53.5519 56.7066 50.8533 51.8927C48.9093 48.4247 51.9258 44.2728 55.8248 45.0501C61.237 46.129 63.6951 38.5635 58.6824 36.2552C55.0712 34.5922 55.0712 29.4602 58.6824 27.7973C63.6952 25.4889 61.237 17.9234 55.8248 19.0023C51.9258 19.7796 48.9093 15.6277 50.8533 12.1597C53.5519 7.34584 47.1163 2.67009 43.3719 6.72417C40.6745 9.64475 35.7936 8.05885 35.328 4.11053ZM30.3042 40.8162C35.3794 40.8162 39.4937 36.7019 39.4937 31.6266C39.4937 26.5513 35.3794 22.437 30.3042 22.437C25.2289 22.437 21.1146 26.5513 21.1146 31.6266C21.1146 36.7019 25.2289 40.8162 30.3042 40.8162Z" fill="#FB971E"/>
         </svg>
@@ -395,9 +341,147 @@
             </defs>
         </svg>
     </div>
-    <div class="page_error__text">
+    <div class="page_error__text" data-aos="zoom-in" data-aos-delay="900">
         <div class="page_error__text--title">Извините такой страницы не существует. Нажмите на кнопку, чтобы прейти в каталог товаров.</div>
-        <div class="button button--back">
+        <a href="/" class="button button--back">
+            <svg width="311" height="100" viewBox="0 0 311 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.75954 4.17817C6.75954 1.90067 8.65841 0.0827765 10.9337 0.181965L245.5 10.4073C245.837 10.422 246.174 10.394 246.504 10.324L290.338 1.02472C292.826 0.496915 295.168 2.3944 295.168 4.93763V46.6252C295.168 47.0322 295.23 47.4368 295.352 47.8251L309.874 94.0059C310.753 96.7983 308.432 99.5571 305.531 99.1709L201.496 85.3224C201.265 85.2916 201.031 85.2811 200.798 85.291L4.82166 93.6591C2.31728 93.7661 0.332776 91.5696 0.692418 89.0889L6.71816 47.5247C6.74571 47.3347 6.75954 47.1429 6.75954 46.9508V4.17817Z" fill="#E49535"/>
+            </svg>
+            <span>На главную</span>
+        </a>
+        <img class="page_error__text--img" src="img/lyutik.png" alt="" data-aos="zoom-in" data-aos-delay="1500">
+    </div>
+</div>
+        </content>
+        <footer class="footer"></footer>
+        <div class="modal" data-modal="1">
+    <div class="modal__in">
+        <div class="modal__closer">
+            <div class="button button--close">
+    
+    
+    
+    
+    
+    
+    
+    
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M53.7 4.93231C53.7 2.3908 51.3607 0.493699 48.874 1.01852L4.17889 10.4514C1.91657 10.9288 0.529057 13.2193 1.15356 15.4455L6.87944 35.8572C7.08864 36.6029 7.07682 37.3934 6.84544 38.1325L1.73422 54.4601C0.897166 57.134 2.99757 59.8177 5.7943 59.6477L38.7 57.6471H54.5974C57.2847 57.6471 59.2076 55.05 58.4233 52.4797L53.8741 37.5706C53.7587 37.1922 53.7 36.7988 53.7 36.4032V4.93231Z" fill="#85A833"/>
+            <g filter="url(#filter0_d_429_109)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0005 25.7369L20.6157 17L17 22.1605L25.4211 30.0002L17.0008 37.8391L20.6165 42.9996L30.0005 34.2634L39.3845 42.9996L43.0003 37.8391L34.58 30.0002L43.001 22.1605L39.3853 17L30.0005 25.7369ZM30.0005 25.7369L25.4211 30.0002L30.0005 34.2634L34.58 30.0002L30.0005 25.7369Z" fill="white"/>
+            <path d="M30.0005 25.7369L25.4211 30.0002L30.0005 34.2634L34.58 30.0002L30.0005 25.7369Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_429_109" x="17" y="17" width="26.001" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.415686 0 0 0 0 0.52549 0 0 0 0 0.14902 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_109"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_109" result="shape"/>
+            </filter>
+            </defs>
+        </svg> 
+    
+    
+    
+    
+    
+    <span>закрыть</span>
+</div>
+    
+        </div>
+        <div class="modal__title">Вы хотите купить все товары в корзине?</div>
+        <div class="modal__buttons">
+            <div class="button button--no_btn">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <svg width="165" height="100" viewBox="0 0 165 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.0898 2.1148C30.9504 0.8242 32.4796 0.147535 34.0135 0.378557L100.032 10.3215C100.506 10.3929 100.988 10.3785 101.457 10.279L145.078 1.02472C147.566 0.496917 149.909 2.3944 149.909 4.93763V46.6252C149.909 47.0322 149.971 47.4368 150.093 47.8251L164.717 94.3286C165.569 97.0376 163.405 99.7468 160.575 99.5152L57.2525 91.0616C56.7552 91.0209 56.2547 91.0736 55.7769 91.2169L29.7166 99.035C27.8565 99.5931 25.8643 98.7344 24.9927 96.9991L1.04418 49.3182C0.398678 48.033 0.49279 46.5002 1.29067 45.3037L30.0898 2.1148Z" fill="#E49535"/>
+        </svg>
+    
+    
+    
+    <span>Нет</span>
+</div>
+    
+            <div class="button button--yes_btn">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <svg width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.75954 4.49914C6.75954 2.10442 8.8495 0.246327 11.2277 0.526632L94.594 10.3524C95.0271 10.4034 95.4657 10.3833 95.8924 10.2928L139.578 1.02472C142.066 0.496917 144.408 2.3944 144.408 4.93763V46.6252C144.408 47.0322 144.471 47.4368 144.593 47.8251L159.115 94.0059C159.993 96.7983 157.673 99.5571 154.771 99.1709L50.9909 85.3562C50.5921 85.3031 50.1876 85.3105 49.791 85.3781L5.4195 92.9413C2.74292 93.3975 0.399215 91.1113 0.788775 88.4242L6.71816 47.5247C6.74571 47.3347 6.75954 47.1429 6.75954 46.9508V4.49914Z" fill="#E49535"/>
+        </svg> 
+    
+    
+    
+    
+    <span>Да</span>
+</div>
+    
+        </div>
+    </div>
+</div>
+<div class="modal" data-modal="2">
+    <div class="modal__in">
+        <div class="modal__closer">
+            <div class="button button--close">
+    
+    
+    
+    
+    
+    
+    
+    
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M53.7 4.93231C53.7 2.3908 51.3607 0.493699 48.874 1.01852L4.17889 10.4514C1.91657 10.9288 0.529057 13.2193 1.15356 15.4455L6.87944 35.8572C7.08864 36.6029 7.07682 37.3934 6.84544 38.1325L1.73422 54.4601C0.897166 57.134 2.99757 59.8177 5.7943 59.6477L38.7 57.6471H54.5974C57.2847 57.6471 59.2076 55.05 58.4233 52.4797L53.8741 37.5706C53.7587 37.1922 53.7 36.7988 53.7 36.4032V4.93231Z" fill="#85A833"/>
+            <g filter="url(#filter0_d_429_109)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0005 25.7369L20.6157 17L17 22.1605L25.4211 30.0002L17.0008 37.8391L20.6165 42.9996L30.0005 34.2634L39.3845 42.9996L43.0003 37.8391L34.58 30.0002L43.001 22.1605L39.3853 17L30.0005 25.7369ZM30.0005 25.7369L25.4211 30.0002L30.0005 34.2634L34.58 30.0002L30.0005 25.7369Z" fill="white"/>
+            <path d="M30.0005 25.7369L25.4211 30.0002L30.0005 34.2634L34.58 30.0002L30.0005 25.7369Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_429_109" x="17" y="17" width="26.001" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.415686 0 0 0 0 0.52549 0 0 0 0 0.14902 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_109"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_109" result="shape"/>
+            </filter>
+            </defs>
+        </svg> 
+    
+    
+    
+    
+    
+    <span>закрыть</span>
+</div>
+    
+        </div>
+        <div class="modal__stitle">Спасибо за покупку!</div>
+        <div class="modal__subtitle">Тут располагаем информацию о дальнейшей судьбе заказа и действиях покупателя</div>
+        <div class="modal__back">
+            <div class="button button--back">
+    
     
     
     
@@ -413,18 +497,79 @@
     
     
     
-    <span>На главную</span>
-    
-    
+    <span>В каталог</span>
 </div>
     
-        <picture><source srcset="img/lyutik.webp" type="image/webp"><img class="page_error__text--img" src="img/lyutik.png" alt=""></picture>
+        </div>
     </div>
 </div>
-        </content>
-        <footer class="footer"></footer>
+<div class="modal education" data-modal="3">
+    <div class="modal__in">
+        <div class="modal__closer">
+            <div class="button button--close">
+    
+    
+    
+    
+    
+    
+    
+    
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M53.7 4.93231C53.7 2.3908 51.3607 0.493699 48.874 1.01852L4.17889 10.4514C1.91657 10.9288 0.529057 13.2193 1.15356 15.4455L6.87944 35.8572C7.08864 36.6029 7.07682 37.3934 6.84544 38.1325L1.73422 54.4601C0.897166 57.134 2.99757 59.8177 5.7943 59.6477L38.7 57.6471H54.5974C57.2847 57.6471 59.2076 55.05 58.4233 52.4797L53.8741 37.5706C53.7587 37.1922 53.7 36.7988 53.7 36.4032V4.93231Z" fill="#85A833"/>
+            <g filter="url(#filter0_d_429_109)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.0005 25.7369L20.6157 17L17 22.1605L25.4211 30.0002L17.0008 37.8391L20.6165 42.9996L30.0005 34.2634L39.3845 42.9996L43.0003 37.8391L34.58 30.0002L43.001 22.1605L39.3853 17L30.0005 25.7369ZM30.0005 25.7369L25.4211 30.0002L30.0005 34.2634L34.58 30.0002L30.0005 25.7369Z" fill="white"/>
+            <path d="M30.0005 25.7369L25.4211 30.0002L30.0005 34.2634L34.58 30.0002L30.0005 25.7369Z" fill="white"/>
+            </g>
+            <defs>
+            <filter id="filter0_d_429_109" x="17" y="17" width="26.001" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.415686 0 0 0 0 0.52549 0 0 0 0 0.14902 0 0 0 1 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_429_109"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_429_109" result="shape"/>
+            </filter>
+            </defs>
+        </svg> 
+    
+    
+    
+    
+    
+    <span>закрыть</span>
+</div>
+    
+        </div>
+        <div class="modal__stitle">Спасибо за покупку!</div>
+        <div class="modal__subtitle">Тут располагаем информацию о дальнейшей судьбе заказа и действиях покупателя</div>
+        <div class="modal__back">
+            <div class="button button--back">
+    
+    
+    
+    
+    
+    
+        <svg width="311" height="100" viewBox="0 0 311 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.75954 4.17817C6.75954 1.90067 8.65841 0.0827765 10.9337 0.181965L245.5 10.4073C245.837 10.422 246.174 10.394 246.504 10.324L290.338 1.02472C292.826 0.496915 295.168 2.3944 295.168 4.93763V46.6252C295.168 47.0322 295.23 47.4368 295.352 47.8251L309.874 94.0059C310.753 96.7983 308.432 99.5571 305.531 99.1709L201.496 85.3224C201.265 85.2916 201.031 85.2811 200.798 85.291L4.82166 93.6591C2.31728 93.7661 0.332776 91.5696 0.692418 89.0889L6.71816 47.5247C6.74571 47.3347 6.75954 47.1429 6.75954 46.9508V4.17817Z" fill="#E49535"/>
+        </svg>
+    
+    
+    
+    
+    
+    
+    
+    <span>В каталог</span>
+</div>
+    
+        </div>
     </div>
-    <script src="js/app.min.js?_v=20220324001304"></script>
+</div>
+    </div>
+    <script src="js/app.min.js?_v=20220329105830"></script>
     <script>
         app.addClassToWrapper('page_404');
     </script>

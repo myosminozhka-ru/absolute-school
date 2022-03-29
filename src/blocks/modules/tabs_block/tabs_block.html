@@ -1,0 +1,36 @@
+<div class="tabs_blocks center-block@@if (h1 === true) { orders_status}">
+    <div class="tabs_blocks__l-side">
+        <div class="tabs_blocks__buttons">
+            <div class="tabs_blocks__item">
+                <div class="tabs_blocks__buttons--owf">
+                    @@if (main === true) {
+                        <div class="button button--white" v-for="button in tabsBlock.buttonsArray" :key="button.index" @click="tabsBlock.setSelected(button.value)" :class="{'isActive' : button.value === tabsBlock.selected}">{{ button.name }}</div>
+                    }
+
+                    @@if (h1 === true) {
+                        <div class="button button--white" v-for="button in orderBlock.buttonsArray" :key="button.index" @click="tabsBlock.setSelected(button.value)" :class="{'isActive' : button.value === tabsBlock.selected}">{{ button.name }}</div>
+                    }
+                </div>
+            </div>
+            <div class="button button--green" @click="tabsBlock.setSelected('all')"><span>Все</span></div>
+        </div>
+    </div>
+    <div class="tabs_blocks__r-side">
+        @@if (h1 === true) {
+            <h1>Мои заказы:</h1>
+        }
+        @@if (main === true) {
+            <form action="">
+                @@include('../../components/forms/inputs/index.html', {
+                    "type" : "orange",
+                    "text" : "Введите что нужно найти",
+                    "error" : false
+                })
+                @@include('../../components/buttons/buttons.html', {
+                    "type" : "search",
+                    "text" : "Поиск"
+                })
+            </form>
+        }
+    </div>
+</div>

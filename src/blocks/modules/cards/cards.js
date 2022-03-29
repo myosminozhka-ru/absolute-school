@@ -1,16 +1,34 @@
 import Glide from '@glidejs/glide';
+import axios from 'axios';
 
 const Cards = class Cards {
     constructor({sliderOptions}){
         this.sliderOptions = sliderOptions;
-        this.slider = new Glide('.cards__slider--js', sliderOptions);
+        this.products = [];
+        this.sliders = [];
+    }
+    fetchProducts() {
+        axios.get('files/products.json').then((products) => {
+            this.products = products.data;
+            this.mountSlider();
+        })
+    }
+    loadMore() {
+        axios.get('files/products-more.json').then((products) => {
+            this.products = [...this.products, ...products.data];
+            this.mountSlider();
+        })
     }
     mountSlider() {
-        this.slider.mount();
+        setTimeout(() => {
+            if (!document.querySelector('.cards__slider--js')) return;
+            document.querySelectorAll('.cards__slider--js').forEach(item => {
+                new Glide(item, this.sliderOptions).mount();
+            })
+        }, 500)
     }
     init() {
-        if (!document.querySelector('.cards__slider--js')) return;
-        this.mountSlider();
+        this.fetchProducts();
     }
 }
 
