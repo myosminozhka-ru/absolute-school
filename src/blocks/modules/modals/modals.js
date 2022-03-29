@@ -13,11 +13,6 @@ const Modals = class Modals {
         document.querySelector(`[${this.modalsSelector}="${id}"]`).classList.remove(this.openedClass);
     }
     addClickListener() {
-        if (document.querySelector('.modal__closer .button')) {
-            document.querySelector('.modal__closer .button').addEventListener('click', () => {
-                this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
-            }) 
-        }
         document.addEventListener('click', (event) => {
             if (event.target.dataset.modalId) {
                 event.preventDefault();
@@ -27,6 +22,9 @@ const Modals = class Modals {
                 this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
             }
         })
+        document.querySelector('.modal__closer .button').addEventListener('click', () => {
+            this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
+        }) 
     }
     addKeyupListener() {
         document.addEventListener('keyup', (event) => {
