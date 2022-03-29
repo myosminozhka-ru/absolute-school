@@ -103,6 +103,80 @@
             margin-right: auto;
         }
     }
+    @-webkit-keyframes op{
+    	from{
+            transform: translateY(-100%);
+    	}
+    	to{
+            transform: translateY(0%);
+    	}
+    }
+    @-webkit-keyframes op2{
+    	from{
+            transform: translateX(100%);
+    	}
+    	to{
+            transform: translateX(0%);
+    	}
+    }
+    @-webkit-keyframes tran{
+    	from{
+            opacity: 0;
+            transform: translateY(100%);
+    	}
+    	to{
+            opacity: 1;
+            transform: translateY(0%);
+    	}
+    }
+    @-webkit-keyframes dash{
+    	from{
+    		stroke-dashoffset:1200;
+    	}
+    	to{
+    		stroke-dashoffset:0;
+    	}
+    }
+    .svg {
+        &__heart {
+            opacity: 1;
+            animation: op 2s linear forwards;
+        }
+        &__head {
+            opacity: 1;
+            animation: op2 1s linear forwards;
+        }
+        &__word {
+            fill: none;
+            stroke: #E49535;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-dasharray:1200;
+            stroke-dashoffset:0;
+            animation: dash 20s linear forwards;
+        }
+        &__word1 {
+            animation: tran .7s linear forwards;
+        }
+        &__word2 {
+            animation: tran 1.4s linear forwards;
+        }
+        &__word3 {
+            animation: tran 2.1s linear forwards;
+        }
+        &__word4 {
+            animation: tran 2.8s linear forwards;
+        }
+        &__word5 {
+            animation: tran 3.5s linear forwards;
+        }
+        &__word6 {
+            animation: tran 4.2s linear forwards;
+        }
+        &__word7 {
+            animation: tran 5s linear forwards;
+        }
+    }
 }
 .isTablet, .isMobile {
     .auth-block {

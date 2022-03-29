@@ -4,47 +4,15 @@
             <div class="tabs_blocks__item">
                 <div class="tabs_blocks__buttons--owf">
                     @@if (main === true) {
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Развивающие игрушки"
-                        })
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Книги"
-                        })
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Одежда"
-                        })
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Наушники"
-                        })
+                        <div class="button button--white" v-for="button in tabsBlock.buttonsArray" :key="button.index" @click="tabsBlock.setSelected(button.value)">{{ button.name }}</div>
                     }
+
                     @@if (h1 === true) {
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Оформлен"
-                        })
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Отменен"
-                        })
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Готов к выдаче"
-                        })
-                        @@include('../../components/buttons/buttons.html', {
-                            "type" : "white",
-                            "text" : "Выдан"
-                        })
+                        <div class="button button--white" v-for="button in orderBlock.buttonsArray" :key="button.index" @click="tabsBlock.setSelected(button.value)" :class="{'isActive' : button.value === tabsBlock.selected}">{{ button.name }}</div>
                     }
                 </div>
             </div>
-            @@include('../../components/buttons/buttons.html', {
-                "type" : "green",
-                "text" : "Все"
-            })
+            <div class="button button--green" @click="tabsBlock.setSelected('all')"><span>Все</span></div>
         </div>
     </div>
     <div class="tabs_blocks__r-side">

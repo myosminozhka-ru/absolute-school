@@ -10,17 +10,22 @@ const Cards = class Cards {
     fetchProducts() {
         axios.get('files/products.json').then((products) => {
             this.products = products.data;
-            setTimeout(() => {
-                if (!document.querySelector('.cards__slider--js')) return;
-                this.mountSlider();
-            }, 500)
+            this.mountSlider();
+        })
+    }
+    loadMore() {
+        axios.get('files/products-more.json').then((products) => {
+            this.products = [...this.products, ...products.data];
+            this.mountSlider();
         })
     }
     mountSlider() {
-        document.querySelectorAll('.cards__slider--js').forEach(item => {
-            new Glide(item, this.sliderOptions).mount();
-            console.log(item);
-        })
+        setTimeout(() => {
+            if (!document.querySelector('.cards__slider--js')) return;
+            document.querySelectorAll('.cards__slider--js').forEach(item => {
+                new Glide(item, this.sliderOptions).mount();
+            })
+        }, 500)
     }
     init() {
         this.fetchProducts();
