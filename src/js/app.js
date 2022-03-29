@@ -8,6 +8,7 @@ import $ from 'jquery';
 import MainHeader from '../blocks/modules/header/header.js';
 import Cards from '../blocks/modules/cards/cards.js';
 import TabsBlock from '../blocks/modules/tabs_block/tabs_block.js';
+import Modals from '../blocks/modules/modals/modals.js';
 
 
 
@@ -72,6 +73,11 @@ window.app = new Vue({
                     value: 'id4'
                 }
             ]
+        }),
+        modals: new Modals({
+            modalsSelector: "data-modal",
+            modalsOpenerSelector: "data-modal-id",
+            openedClass: "isOpened"
         })
     }),
     beforeCreate() {
@@ -83,6 +89,7 @@ window.app = new Vue({
         this.isMounted = true;
         this.mainHeader.init();
         this.cards.init();
+        this.modals.init();
         this.animateBlocks();
     },
     computed: {

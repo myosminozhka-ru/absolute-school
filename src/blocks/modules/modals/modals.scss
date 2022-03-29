@@ -1,0 +1,128 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, .9);
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    &.isOpened {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+    &__in {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        width: 100%;
+        max-width: vw(796);
+        padding: vw(115) vw(174) vw(120) vw(174);
+        min-height: vw(530);
+        background: url("data:image/svg+xml,%3Csvg width='771' height='513' viewBox='0 0 771 513' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.34181 27.7142C-3.80466 13.5504 7.96817 -1.00112 22.8943 1.07471L216.5 28H729.559C742.515 28 752.052 40.1316 748.993 52.7221L683.505 322.25C682.224 327.522 683.14 333.089 686.043 337.673L767.068 465.607C775.393 478.751 766.18 495.95 750.625 496.303L37.4747 512.49C25.5095 512.761 15.9862 502.534 17.1091 490.619L48.078 161.979C48.3559 159.03 47.9753 156.056 46.9638 153.272L1.34181 27.7142Z' fill='white'/%3E%3C/svg%3E%0A") 50% / contain no-repeat;
+    }
+    &__closer {
+        top: vw(-6.5);
+        position: absolute;
+        right: vw(-3);
+        svg {
+            pointer-events: none;
+        }
+    }
+    &__title {
+        margin-bottom: vw(60);
+        font-family: 'Jingleberry', serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: vw(50);
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+        max-width: vw(447);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__stitle {
+        font-family: 'Jingleberry', serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: vw(50);
+        line-height: 120%;
+        text-align: center;
+        color: #000000;
+        max-width: vw(447);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: vw(20);
+    }
+    &__subtitle {
+        font-family: 'Gilroy', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: vw(20);
+        line-height: 160%;
+        text-align: center;
+        color: #424242;
+        margin-bottom: vw(40);
+    }
+    &__buttons {
+        max-width: vw(447);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__back {
+        .button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &.education {
+        
+    }
+}
+.isTablet, .isMobile {
+    .modal {
+        &__in {
+            max-width: 345px;
+            width: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='331' height='314' viewBox='0 0 331 314' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.855597 24.8475C-2.32949 10.5159 10.4977 -2.2488 24.8136 1.00632L89.9797 15.8236C91.4347 16.1544 92.922 16.3214 94.4141 16.3214H304.066C315.68 16.3214 324.851 26.1801 324.014 37.7636L310.655 222.55C310.442 225.484 310.88 228.429 311.937 231.175L328.944 275.369C333.873 288.176 324.734 302.029 311.02 302.538L27.0951 313.075C15.2081 313.516 5.56587 303.547 6.40296 291.681L19.15 110.991C19.2859 109.065 19.1421 107.13 18.7233 105.245L0.855597 24.8475Z' fill='white'/%3E%3C/svg%3E%0A") 50% / contain no-repeat;
+            padding: 65px 30px;
+        }
+        &__closer {
+            right: 0;
+            top: -4px;
+        }
+        &__title {
+            margin-bottom: 30px;
+            font-size: 30px;
+            max-width: 100%;
+        }
+        &__stitle {
+            margin-bottom: 10px;
+            font-size: 30px;
+            max-width: 100%;
+        }
+        &__subtitle {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        &__buttons {
+            max-width: 230px;
+        }
+    }
+}

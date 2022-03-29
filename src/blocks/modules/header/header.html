@@ -4,13 +4,15 @@
         "type" : "help",
         "text" : "Помощь"
     })
-    @@include('../../components/buttons/buttons.html', {
+    @@include('../../components/buttons/links/index.html', {
         "type" : "order",
-        "text" : "Мои заказы"
+        "text" : "Мои заказы",
+        "link" : "/orders.html"
     })
-    @@include('../../components/buttons/buttons.html', {
+    @@include('../../components/buttons/links/index.html', {
         "type" : "cart_min",
-        "text" : "Корзина"
+        "text" : "Корзина",
+        "link" : "/cart.html"
     })
     <div class="header__info">
         <div class="header__info--img">
@@ -49,14 +51,16 @@
             </div>
             <div class="menu_burger--items">
                 <div class="menu_burger--menu">
-                    @@include('../../components/buttons/buttons.html', {
+                    @@include('../../components/buttons/links/index.html', {
                         "type" : "order",
-                        "text" : "Мои заказы"
+                        "text" : "Мои заказы",
+                        "link" : "/orders.html"
                     })
-                    @@include('../../components/buttons/buttons.html', {
+                    @@include('../../components/buttons/links/index.html', {
                         "type" : "cart_min",
-                        "text" : "Корзина"
-                    })  
+                        "text" : "Корзина",
+                        "link" : "/cart.html"
+                    })
                 </div> 
                 @@include('../../components/buttons/buttons.html', {
                     "type" : "orange",

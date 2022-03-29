@@ -1,5 +1,6 @@
 .auth {
     padding: 0;
+    overflow-x: hidden;
     .header { 
         margin: 0;
     }
@@ -103,20 +104,24 @@
             margin-right: auto;
         }
     }
+    @-webkit-keyframes sc{
+    	from{
+            transform: scale(1.5) translateX(-80px);
+            opacity: 0;
+    	}
+    	to{
+            transform: scale(1) translateX(0px);
+            opacity: 1;
+    	}
+    }
     @-webkit-keyframes op{
     	from{
-            transform: translateY(-100%);
+            opacity: 0;
+            transform: translateY(100%);
     	}
     	to{
             transform: translateY(0%);
-    	}
-    }
-    @-webkit-keyframes op2{
-    	from{
-            transform: translateX(100%);
-    	}
-    	to{
-            transform: translateX(0%);
+            opacity: 1;
     	}
     }
     @-webkit-keyframes tran{
@@ -140,11 +145,11 @@
     .svg {
         &__heart {
             opacity: 1;
-            animation: op 2s linear forwards;
+            animation: sc 1s linear forwards;
         }
         &__head {
             opacity: 1;
-            animation: op2 1s linear forwards;
+            animation: op 2s linear forwards;
         }
         &__word {
             fill: none;

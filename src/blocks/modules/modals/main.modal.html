@@ -1,0 +1,57 @@
+<div class="modal" data-modal="1">
+    <div class="modal__in">
+        <div class="modal__closer">
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "close",
+                "text" : "закрыть"
+            })
+        </div>
+        <div class="modal__title">Вы хотите купить все товары в корзине?</div>
+        <div class="modal__buttons">
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "no_btn",
+                "text" : "Нет"
+            })
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "yes_btn",
+                "text" : "Да"
+            })
+        </div>
+    </div>
+</div>
+<div class="modal" data-modal="2">
+    <div class="modal__in">
+        <div class="modal__closer">
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "close",
+                "text" : "закрыть"
+            })
+        </div>
+        <div class="modal__stitle">Спасибо за покупку!</div>
+        <div class="modal__subtitle">Тут располагаем информацию о дальнейшей судьбе заказа и действиях покупателя</div>
+        <div class="modal__back">
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "back",
+                "text" : "В каталог"
+            })
+        </div>
+    </div>
+</div>
+<div class="modal education" data-modal="3">
+    <div class="modal__in">
+        <div class="modal__closer">
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "close",
+                "text" : "закрыть"
+            })
+        </div>
+        <div class="modal__stitle">Спасибо за покупку!</div>
+        <div class="modal__subtitle">Тут располагаем информацию о дальнейшей судьбе заказа и действиях покупателя</div>
+        <div class="modal__back">
+            @@include('../../components/buttons/buttons.html', {
+                "type" : "back",
+                "text" : "В каталог"
+            })
+        </div>
+    </div>
+</div>
