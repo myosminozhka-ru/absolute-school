@@ -8,6 +8,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        position: relative;
         &:nth-child(even) {
             flex-direction: row-reverse;
         }
@@ -115,6 +116,37 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        &:nth-child(odd) {
+            &:before {
+                position: absolute;
+                content: '';
+                background: url('../img/girl.png') 0 no-repeat;
+                right: vw(-150);
+                bottom: vw(-72);
+                width: 255px;
+                height: 520px;
+                pointer-events: none;
+                @media all and (max-width: 1600px) {
+                    display: none;
+                }
+            }
+        }
+        &:nth-child(even) {
+            &:before {
+                position: absolute;
+                content: '';
+                background: url('../img/boy.png') 0 no-repeat;
+                left: vw(-150);
+                bottom: vw(-76);
+                width: 355px;
+                z-index: 1;
+                height: 532px;
+                pointer-events: none;
+                @media all and (max-width: 1600px) {
+                    display: none;
                 }
             }
         }

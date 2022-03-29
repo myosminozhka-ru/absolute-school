@@ -9,6 +9,7 @@ import MainHeader from '../blocks/modules/header/header.js';
 import Cards from '../blocks/modules/cards/cards.js';
 import TabsBlock from '../blocks/modules/tabs_block/tabs_block.js';
 import Modals from '../blocks/modules/modals/modals.js';
+import MainOrders from '../blocks/modules/orders/orders.js';
 
 
 
@@ -77,8 +78,15 @@ window.app = new Vue({
         modals: new Modals({
             modalsSelector: "data-modal",
             modalsOpenerSelector: "data-modal-id",
-            openedClass: "isOpened"
-        })
+            openedClass: "isOpened",
+            sliderModal: {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                transitionType: 'fade'
+            }
+        }),
+        mainOrders: new MainOrders()
     }),
     beforeCreate() {
         window.addEventListener('resize', () => {
@@ -91,6 +99,7 @@ window.app = new Vue({
         this.cards.init();
         this.modals.init();
         this.animateBlocks();
+        this.mainOrders.init();
     },
     computed: {
         isMobile: function () {

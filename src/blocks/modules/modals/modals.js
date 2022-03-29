@@ -1,8 +1,11 @@
+import Glide from '@glidejs/glide';
+
 const Modals = class Modals {
-    constructor({modalsSelector, modalsOpenerSelector, openedClass}){
+    constructor({modalsSelector, modalsOpenerSelector, openedClass, sliderModal}){
         this.modalsSelector = modalsSelector;
         this.modalsOpenerSelector = modalsOpenerSelector;
         this.openedClass = openedClass;
+        this.sliderModal = sliderModal;
     }
     openModal(id) {
         if (!document.querySelector(`[${this.modalsSelector}="${id}"]`)) return;
@@ -33,10 +36,14 @@ const Modals = class Modals {
             }
         })
     }
+    sliderModalMounted() {
+        new Glide(document.querySelector('.mount-slider--js'), this.sliderModal).mount();
+    }
     init() {
         if (!this.modalsSelector && this.modalsOpenerSelector) return;
         this.addClickListener();
         this.addKeyupListener();
+        this.sliderModalMounted();
     }
 }
 

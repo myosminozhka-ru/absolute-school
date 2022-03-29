@@ -1,18 +1,18 @@
 <div class="cards">
     <div class="cards__item" v-for="product in products" :key="product.index">
         <div class="cards__item--l-side">
-            <h1 class="cards__item--title">{{ product.name }}</h1>
-            <div class="cards__item--text">{{ product.description }}</div>
+            <h1 class="cards__item--title" data-aos="fade-up">{{ product.name }}</h1>
+            <div class="cards__item--text" data-aos="fade-up">{{ product.description }}</div>
             <form action="">
                 <div class="cards__item--color-item">
-                    <div class="cards__item--colors">
+                    <div class="cards__item--colors" data-aos="fade-up">
                         <label class="checkbox check_standart" v-for="color in product.colors" :key="color.index" :style="`--background: ${ color.color_code };`">
                             <input class="custom-checkbox" type="radio" name="color" :value=" color.color_name ">
                             <div>{{ color.color_name }}</div>
                         </label>
                     </div>
                 </div>
-                <div class="cards__item--size-item">
+                <div class="cards__item--size-item" data-aos="fade-up">
                     <div class="cards__item--size">
                         <label class="checkbox check_size" v-for="size in product.sizes" :key="size.index">
                             <input class="custom-checkbox" type="radio" name="size" :value=" size ">
@@ -20,7 +20,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="cards__item--buttons">
+                <div class="cards__item--buttons" data-aos="fade-up">
                     @@include('../../components/typografy/prices/index.html', {
                         "type" : "price",
                         "text" : "14 500"
