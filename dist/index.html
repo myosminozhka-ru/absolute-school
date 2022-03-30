@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/style.css?_v=20220329170955">
+    <link rel="stylesheet" href="css/style.css?_v=20220329232756">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -350,7 +350,7 @@
 </div>
         <content class="content">
             <div class="cards">
-    <div class="cards__item" v-for="product in products" :key="product.index">
+    <div class="cards__item" v-for="product in mainProducts" :key="mainProducts.index">
         <div class="cards__item--l-side">
             <h1 class="cards__item--title" data-aos="fade-up">{{ product.name }}</h1>
             <div class="cards__item--text" data-aos="fade-up">{{ product.description }}</div>
@@ -700,17 +700,17 @@
         <div class="glide mount-slider--js">
             <div data-glide-el="track" class="glide__track">
               <ul class="glide__slides">
-                <li class="glide__slide"><img src="img/sl1.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl2.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl3.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl4.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl5.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl6.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl7.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl8.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl9.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl10.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl11.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl1.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl2.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl3.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl4.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl5.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl6.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl7.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl8.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl9.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl10.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl11.jpg" alt=""></li>
               </ul>
             </div>
             <div class="modal__controls" data-glide-el="controls">
@@ -742,6 +742,10 @@
     <span>Назад</span>
 </div>
     
+                </div>
+                <div class="number">
+                    <span>{{ modals.slider.index+1 }}</span>
+                    <span>{{ modals.itemLength }}</span>
                 </div>
                 <div data-glide-dir=">">
                     <div class="button button--next">
@@ -783,6 +787,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20220329170955"></script>
+    <script src="js/app.min.js?_v=20220329232756"></script>
 </body>
 </html>

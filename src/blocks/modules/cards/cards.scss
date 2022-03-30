@@ -45,7 +45,7 @@
             flex-wrap: wrap;
             margin-bottom: 25px;
             .checkbox {
-                margin-right: 44px;
+                margin-right: vw(44);
             }
         }
         &--r-side {
@@ -207,6 +207,7 @@
                 .glide {
                     &__track {
                         padding: 45px 0;
+                        border-radius: 20px;
                     }
                     &__controls {
                         display: none;
@@ -238,6 +239,7 @@
                 overflow-x: scroll;
                 margin-bottom: 20px;
                 padding-top: 2px;
+                width: calc(100% + 20px);
             }
             &--size-item {
                 overflow: hidden;

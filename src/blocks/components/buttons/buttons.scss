@@ -154,7 +154,7 @@
         transition: all .3s ease-out;
         cursor: pointer;
         &:hover, &:active, &.isActive {
-            box-shadow: 0px vw(7) vw(30) rgba(230, 119, 31, 0.2);
+            box-shadow: 0px vw(7) vw(24) rgba(230, 119, 31, 0.2);
         }
     }
     &--order {
@@ -476,6 +476,9 @@
         position: relative;
         line-height: 160%;
         text-align: center;
+        span {
+            pointer-events: none;
+        }
         svg {
             transition: all .3s ease-out;
             filter: drop-shadow(0px 9px 0px #AD7026);
@@ -491,6 +494,9 @@
             object-fit: contain;
             path {
                 transition: all .3s ease-out;
+            }
+            &.mob_icon {
+                display: none;
             }
         }
         &:hover {

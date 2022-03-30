@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мои заказы</title>
-    <link rel="stylesheet" href="css/style.css?_v=20220329170955">
+    <link rel="stylesheet" href="css/style.css?_v=20220329232756">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -308,7 +308,7 @@
                     
 
                     
-                        <div class="button button--white" v-for="button in orderBlock.buttonsArray" :key="button.index" @click="tabsBlock.setSelected(button.value)" :class="{'isActive' : button.value === tabsBlock.selected}">{{ button.name }}</div>
+                        <div class="button button--white" v-for="button in orderBlock.buttonsArray" :key="button.index" @click="orderBlock.setSelected(button.value)" :class="{'isActive' : button.value === orderBlock.selected}">{{ button.name }}</div>
                     
                 </div>
             </div>
@@ -324,7 +324,7 @@
 </div>
         <content class="content">
             <div class="orders center-block">
-    <div class="orders__block" v-for="product in products" :key="product.index">
+    <div class="orders__block" v-for="product in ordersProducts" :key="ordersProducts.index">
         <div class="orders__block--l-side">
             <div class="orders__block--order-number"><span>№ заказа:</span> 0000000001</div>
             <div class="orders__block--date">От: 16.02.2021</div>
@@ -461,7 +461,7 @@
         </div>
     </div>
     <div class="orders__more">
-        <div class="button button--more" @click="cards.loadMore.apply(cards)">
+        <div class="button button--more" @click="mainOrders.loadMore.apply(mainOrders)">
             <svg width="261" height="100" viewBox="0 0 261 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_227_7177)">
                 <path d="M5.68066 4.21286C5.68066 1.92233 7.60041 0.0995808 9.88787 0.218236L206.141 10.3982C206.54 10.4189 206.939 10.3797 207.327 10.2819L243.077 1.25693C245.604 0.619054 248.057 2.52918 248.057 5.13526V46.7196C248.057 47.0646 248.101 47.4081 248.189 47.7416L260.432 94.0672C261.17 96.8612 258.793 99.4921 255.939 99.04L169.456 85.3413C169.182 85.2979 168.904 85.2832 168.627 85.2972L4.74867 93.6238C2.269 93.7497 0.274768 91.6098 0.575049 89.1451L5.68066 47.2393V4.21286Z" fill="#85A832"/>
@@ -685,17 +685,17 @@
         <div class="glide mount-slider--js">
             <div data-glide-el="track" class="glide__track">
               <ul class="glide__slides">
-                <li class="glide__slide"><img src="img/sl1.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl2.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl3.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl4.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl5.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl6.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl7.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl8.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl9.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl10.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl11.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl1.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl2.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl3.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl4.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl5.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl6.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl7.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl8.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl9.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl10.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl11.jpg" alt=""></li>
               </ul>
             </div>
             <div class="modal__controls" data-glide-el="controls">
@@ -727,6 +727,10 @@
     <span>Назад</span>
 </div>
     
+                </div>
+                <div class="number">
+                    <span>{{ modals.slider.index+1 }}</span>
+                    <span>{{ modals.itemLength }}</span>
                 </div>
                 <div data-glide-dir=">">
                     <div class="button button--next">
@@ -768,6 +772,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20220329170955"></script>
+    <script src="js/app.min.js?_v=20220329232756"></script>
 </body>
 </html>

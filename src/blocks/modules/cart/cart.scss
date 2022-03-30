@@ -118,6 +118,9 @@
             width: 100%;
             flex: none;
             margin-right: vw(40);
+            @media all and (min-width: 1920px) {
+                max-width: vw(310);
+            }
             h2 {
                 margin-bottom: vw(10);
             }
@@ -147,6 +150,10 @@
             .check_size {
                 font-size: vw(35);
             }
+        }
+        &--amount {
+            display: flex;
+            align-items: center;
         }
         &--minus {
             margin-right: vw(14);
@@ -181,6 +188,9 @@
             max-width: 120px;
             width: 100%;
             flex: none;
+            @media all and (min-width: 1920px) {
+                max-width: vw(120);
+            }
             .price_all {
                 font-size: inherit;
                 line-height: normal;
@@ -272,10 +282,6 @@
             &--plus {
                 margin-left: 17px;
                 height: 39px;
-            }
-            &--amount {
-                display: flex;
-                align-items: center;
             }
             .product_amount {
                 font-size: 18px;

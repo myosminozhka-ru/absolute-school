@@ -7,15 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вход</title>
-    <link rel="stylesheet" href="css/style.css?_v=20220329170955">
+    <link rel="stylesheet" href="css/style.css?_v=20220329232756">
 </head>
 <body>
-    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
-        <header class="header">
-
-        </header>
-        <content class="content">
-            <div class="auth-block">
+    <div class="wrapper" id="app">
+        <div class="wrapper__in" :class="{isMobile, isTablet}">
+            <header class="header">
+    
+            </header>
+            <content class="content">
+                <div class="auth-block">
     <a href="/" class="auth-block__l-side">
         <svg width="461" height="425" viewBox="0 0 461 425" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_229_15244)">
@@ -81,9 +82,9 @@
         </div>
     </div>
 </div>
-        </content>
-        <footer class="footer"></footer>
-        <div class="modal" data-modal="1">
+            </content>
+            <footer class="footer"></footer>
+            <div class="modal" data-modal="1">
     <div class="modal__in">
         <div class="modal__closer">
             <div class="button button--close">
@@ -280,17 +281,17 @@
         <div class="glide mount-slider--js">
             <div data-glide-el="track" class="glide__track">
               <ul class="glide__slides">
-                <li class="glide__slide"><img src="img/sl1.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl2.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl3.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl4.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl5.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl6.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl7.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl8.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl9.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl10.jpg" alt=""></li>
-                <li class="glide__slide"><img src="img/sl11.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl1.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl2.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl3.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl4.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl5.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl6.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl7.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl8.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl9.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl10.jpg" alt=""></li>
+                <li class="glide__slide tourItem"><img src="img/sl11.jpg" alt=""></li>
               </ul>
             </div>
             <div class="modal__controls" data-glide-el="controls">
@@ -322,6 +323,10 @@
     <span>Назад</span>
 </div>
     
+                </div>
+                <div class="number">
+                    <span>{{ modals.slider.index+1 }}</span>
+                    <span>{{ modals.itemLength }}</span>
                 </div>
                 <div data-glide-dir=">">
                     <div class="button button--next">
@@ -362,8 +367,9 @@
           </div>
     </div>
 </div>
+        </div>
     </div>
-    <script src="js/app.min.js?_v=20220329170955"></script>
+    <script src="js/app.min.js?_v=20220329232756"></script>
     <script>
         app.addClassToWrapper('auth');
     </script>

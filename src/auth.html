@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
-        <header class="header">
-
-        </header>
-        <content class="content">
-            @@include('blocks/modules/auth/auth.html', {})
-        </content>
-        <footer class="footer"></footer>
-        @@include('blocks/modules/modals/main.modal.html', {})
+    <div class="wrapper" id="app">
+        <div class="wrapper__in" :class="{isMobile, isTablet}">
+            <header class="header">
+    
+            </header>
+            <content class="content">
+                @@include('blocks/modules/auth/auth.html', {})
+            </content>
+            <footer class="footer"></footer>
+            @@include('blocks/modules/modals/main.modal.html', {})
+        </div>
     </div>
     <script src="js/app.min.js"></script>
     <script>

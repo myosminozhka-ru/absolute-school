@@ -5,7 +5,6 @@
     margin-bottom: vw(150);
     &__block {
         background: #F7DD85;
-        border: 3px solid rgba(254, 168, 64, 0.3);
         box-shadow: 0px 70px 60px -60px #CCAD86, inset 0px -16px 29px rgba(151, 113, 65, 0.2), inset 0px 10px 20px rgba(255, 255, 255, 0.15);
         border-radius: vw(30);
         padding: vw(37) vw(69) vw(16) vw(44);
@@ -208,7 +207,7 @@
                 }
                 .price_all {
                     margin-left: auto;
-                    display: inline-flex;
+                    display: block;
                     svg {
                         width: 14px;
                         height: 14px;
@@ -338,7 +337,14 @@
     }
 }
 .isMobile {
-    &__more {
-        margin-top: 40px;
+    .orders {
+        &__block {
+            &--more {
+                margin-top: 40px;
+                @media all and (max-width: 350px) {
+                    margin-top: 72px;
+                }
+            }
+        }
     }
 }

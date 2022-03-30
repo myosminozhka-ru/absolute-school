@@ -1,6 +1,9 @@
 .page_404 {
     position: relative;
     height: 100vh;
+    &:before {
+        background: rgba(255, 249, 228, 39%) url(../img/bg_site.png) 0;
+    }
 }
 .page_error {
     height: 100%;

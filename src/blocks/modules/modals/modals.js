@@ -1,11 +1,13 @@
 import Glide from '@glidejs/glide';
 
 const Modals = class Modals {
-    constructor({modalsSelector, modalsOpenerSelector, openedClass, sliderModal}){
+    constructor({modalsSelector, modalsOpenerSelector, openedClass, sliderOptions}){
         this.modalsSelector = modalsSelector;
         this.modalsOpenerSelector = modalsOpenerSelector;
         this.openedClass = openedClass;
-        this.sliderModal = sliderModal;
+        this.sliderOptions = sliderOptions;
+        this.slider = new Glide('.mount-slider--js', this.sliderOptions);
+        this.itemLength = [...document.querySelectorAll('.tourItem')].length;
     }
     openModal(id) {
         if (!document.querySelector(`[${this.modalsSelector}="${id}"]`)) return;
@@ -24,10 +26,11 @@ const Modals = class Modals {
             if (!event.target.dataset.modalId && event.target.dataset.modal) {
                 this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
             }
+            if (event.target.closest('.modal__closer')) {
+                console.log(event);
+                this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
+            }
         })
-        document.querySelector('.modal__closer .button').addEventListener('click', () => {
-            this.closeModal(document.querySelector(`[${this.modalsSelector}].isOpened`).dataset.modal);
-        }) 
     }
     addKeyupListener() {
         document.addEventListener('keyup', (event) => {
@@ -36,14 +39,15 @@ const Modals = class Modals {
             }
         })
     }
-    sliderModalMounted() {
-        new Glide(document.querySelector('.mount-slider--js'), this.sliderModal).mount();
+    sliderModalMount() {
+        this.slider.mount();
+        console.log(this.slider.index)
     }
     init() {
         if (!this.modalsSelector && this.modalsOpenerSelector) return;
         this.addClickListener();
         this.addKeyupListener();
-        this.sliderModalMounted();
+        this.sliderModalMount();
     }
 }
 
