@@ -19,14 +19,90 @@
                 })
                 <div class="cart__product--text">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
                 <div class="cart__product--check">
-                    <label class="checkbox check_standart"  style="--background: #FF695F;">
-                        <input class="custom-checkbox" type="radio" value="Оранжевый">
-                        <div>Оранжевый</div>
-                    </label>
-                    <label class="checkbox check_size">
-                        <input class="custom-checkbox" type="radio" value="XXL">
-                        <div>XXL</div>
-                    </label>
+                    <div class="cart__product--check-item">
+                        <span class="item">
+                            <label class="checkbox check_standart"  style="--background: #FF695F;">
+                                <input class="custom-checkbox" type="radio" value="Оранжевый">
+                                <div>Оранжевый</div>
+                            </label>
+                        </span>
+                        <div class="cart__product--blocks">
+                            <label class="checkbox check_standart"  style="--background: #fff;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Белый">
+                                <div>Белый</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #94D81F;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Салатовый">
+                                <div>Салатовый</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #28AB80;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Зеленый">
+                                <div>Зеленый</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #FF695F;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Оранжевый">
+                                <div>Оранжевый</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #EE1C1C;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Красный">
+                                <div>Красный</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #124CF8;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Синий">
+                                <div>Синий</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #12DBFF;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Голубой">
+                                <div>Голубой</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #000;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Черный">
+                                <div>Черный</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #C4C4C4;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Серый">
+                                <div>Серый</div>
+                            </label>
+                            <label class="checkbox check_standart"  style="--background: #28AB80;">
+                                <input class="custom-checkbox" type="radio" name="color" value="Зеленый">
+                                <div>Зеленый</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cart__product--size-item">
+                        <span class="item">
+                            <label class="checkbox check_size">
+                                <input class="custom-checkbox" type="radio" name="size" value="XXL">
+                                <div>XXL</div>
+                            </label>
+                        </span>
+                        <div class="cart__product--blocks">
+                            <label class="checkbox check_size">
+                                <input class="custom-checkbox" type="radio" name="size" value="XXL">
+                                <div>XXL</div>
+                            </label>
+                            <label class="checkbox check_size">
+                                <input class="custom-checkbox" type="radio" name="size" value="XL">
+                                <div>XL</div>
+                            </label>
+                            <label class="checkbox check_size">
+                                <input class="custom-checkbox" type="radio" name="size" value="L">
+                                <div>L</div>
+                            </label>
+                            <label class="checkbox check_size">
+                                <input class="custom-checkbox" type="radio" name="size" value="m">
+                                <div>m</div>
+                            </label>
+                            <label class="checkbox check_size">
+                                <input class="custom-checkbox" type="radio" name="size" value="s">
+                                <div>s</div>
+                            </label>
+                            <label class="checkbox check_size">
+                                <input class="custom-checkbox" type="radio" name="size" value="xs">
+                                <div>xs</div>
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="cart__product--amount">
                     <button class="cart__product--minus">-</button>
@@ -34,87 +110,10 @@
                         "type" : "prod_amount",
                         "text" : "1шт."
                     })
-                    <button class="cart__product--plus">+</button>
-                </div>
-            </div>
-            <div class="cart__product--price">
-                @@include('../../components/typografy/prices/index.html', {
-                    "type" : "price",
-                    "text" : "14 500"
-                })
-            </div>
-        </div>
-        <div class="cart__product">
-            <div class="cart__product--img">
-                @@include('../../components/buttons/buttons.html', {
-                    "type" : "close",
-                    "text" : "закрыть"
-                })
-                <img src="@img/shirt.png" alt="">
-            </div>
-            <div class="cart__product--info">
-                @@include('../../components/typografy/hn/index.html', {
-                    "type" : "h2",
-                    "text" : "Название в три слова и максимум 2 строки"
-                })
-                <div class="cart__product--text">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
-                <div class="cart__product--check">
-                    <label class="checkbox check_standart"  style="--background: #FF695F;">
-                        <input class="custom-checkbox" type="radio" value="Оранжевый">
-                        <div>Оранжевый</div>
-                    </label>
-                    <label class="checkbox check_size">
-                        <input class="custom-checkbox" type="radio" value="XXL">
-                        <div>XXL</div>
-                    </label>
-                </div>
-                <div class="cart__product--amount">
-                    <button class="cart__product--minus">-</button>
-                    @@include('../../components/typografy/prices/index.html', {
-                        "type" : "prod_amount",
-                        "text" : "1шт."
-                    })
-                    <button class="cart__product--plus">+</button>
-                </div>
-            </div>
-            <div class="cart__product--price">
-                @@include('../../components/typografy/prices/index.html', {
-                    "type" : "price",
-                    "text" : "14 500"
-                })
-            </div>
-        </div>
-        <div class="cart__product">
-            <div class="cart__product--img">
-                @@include('../../components/buttons/buttons.html', {
-                    "type" : "close",
-                    "text" : "закрыть"
-                })
-                <img src="@img/shirt.png" alt="">
-            </div>
-            <div class="cart__product--info">
-                @@include('../../components/typografy/hn/index.html', {
-                    "type" : "h2",
-                    "text" : "Название в три слова и максимум 2 строки"
-                })
-                <div class="cart__product--text">Белая футболка для занятий спортом (с принтом школы Абсолют)Белая футболка для занятий спортом (с принтом школы Абсолют)</div>
-                <div class="cart__product--check">
-                    <label class="checkbox check_standart"  style="--background: #FF695F;">
-                        <input class="custom-checkbox" type="radio" value="Оранжевый">
-                        <div>Оранжевый</div>
-                    </label>
-                    <label class="checkbox check_size">
-                        <input class="custom-checkbox" type="radio" value="XXL">
-                        <div>XXL</div>
-                    </label>
-                </div>
-                <div class="cart__product--amount">
-                    <button class="cart__product--minus">-</button>
-                    @@include('../../components/typografy/prices/index.html', {
-                        "type" : "prod_amount",
-                        "text" : "1шт."
-                    })
-                    <button class="cart__product--plus">+</button>
+                    <button class="cart__product--plus">
+                        <span>+</span>
+                        <div class="cart__product--plus-warn">На вашем балансе недостаточно средств</div>
+                    </button>
                 </div>
             </div>
             <div class="cart__product--price">

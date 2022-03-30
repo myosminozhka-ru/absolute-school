@@ -1,4 +1,4 @@
-<div class="button @@if (type === 'burger') {button--burger}@@if (type === 'white') {button--white}@@if (type === 'green') {button--green}@@if (type === 'orange') {button--orange}@@if (type === 'cart') {button--cart}@@if (type === 'help') {button--help}@@if (type === 'no_btn') {button--no_btn}@@if (type === 'close') {button--close}@@if (type === 'checkout') {button--checkout}@@if (type === 'back') {button--back}@@if (type === 'prev') {button--prev}@@if (type === 'yes_btn') {button--yes_btn}@@if (type === 'slider_next') {button--slider_next}@@if (type === 'more') {button--more}@@if (type === 'search') {button--search}"@@if (type === 'checkout') { data-modal-id="1"}@@if (type === 'help') { data-modal-id="3"}>
+<div class="button @@if (type === 'burger') {button--burger}@@if (type === 'white') {button--white}@@if (type === 'green') {button--green}@@if (type === 'orange') {button--orange}@@if (type === 'cart') {button--cart}@@if (type === 'help') {button--help}@@if (type === 'no_btn') {button--no_btn}@@if (type === 'close') {button--close}@@if (type === 'checkout') {button--checkout}@@if (type === 'back') {button--back}@@if (type === 'prev') {button--prev}@@if (type === 'yes_btn') {button--yes_btn}@@if (type === 'slider_next') {button--slider_next}@@if (type === 'more') {button--more}@@if (type === 'search') {button--search}@@if (type === 'next') {button--next}"@@if (type === 'checkout') { data-modal-id="1"}@@if (type === 'help') { data-modal-id="3"}>
     @@if (type === 'search') {
         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 16.0311C0 14.0138 1.50215 12.3122 3.50386 12.062L95.5039 0.562017C97.8913 0.26359 100 2.12514 100 4.53113V95.5018C100 97.8962 97.9106 99.7542 95.5326 99.4744L3.53264 88.6509C1.51818 88.4139 0 86.7066 0 84.6783V16.0311Z" fill="#85A832"/>
@@ -63,6 +63,23 @@
             <path d="M24.0505 26.8779L23.4515 28.6964L34.9826 33.5741L35.603 31.7556L24.0505 26.8779Z" fill="#AD7026"/>
             <path d="M25.1618 18L16.797 23.2414L23.5145 30.8575L24.0494 26.8783L35.6019 31.756L37.2278 20.3319L24.6484 21.9792L25.1618 18Z" fill="white"/>
             <path d="M16.7983 23.2422L16.1993 25.0606L22.9169 32.6767L23.5159 30.8583L16.7983 23.2422Z" fill="#AD7026"/>
+        </svg>
+    }
+    @@if (type === 'next') {
+        <svg class="desc_icon" width="280" height="108" viewBox="0 0 280 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.966884 17.072C-0.412274 14.4818 1.37429 11.3376 4.30532 11.1966L235.063 0.093208C236.286 0.0343461 237.469 0.539143 238.273 1.46312L278.171 47.3232C279.5 48.8506 279.478 51.13 278.12 52.6316L229.835 106.024C228.994 106.954 227.766 107.435 226.518 107.326L4.11367 87.7728C1.23471 87.5197 -0.433913 84.3907 0.959939 81.859L17.4554 51.8974C18.1071 50.7136 18.1171 49.2809 17.482 48.0882L0.966884 17.072Z" fill="#E49535"/>
+        </svg>
+        <svg class="mob_icon" width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.870457 9.96159C0.401167 7.67657 1.97875 5.47641 4.29351 5.18764L42.6312 0.405003C44.5199 0.169388 46.3131 1.29726 46.9186 3.10171L53.7925 23.5861C54.0747 24.4272 54.0693 25.3383 53.7771 26.1761L45.4242 50.1225C44.7534 52.0457 42.7444 53.1577 40.7585 52.705L3.84244 44.2906C1.71114 43.8048 0.364557 41.698 0.818627 39.5597L3.76158 25.7009C3.87604 25.1619 3.8779 24.6051 3.76705 24.0654L0.870457 9.96159Z" fill="url(#paint0_linear_229_17854)"/>
+            <path d="M30.1775 26.8779L30.7765 28.6964L19.2454 33.5741L18.625 31.7556L30.1775 26.8779Z" fill="#AD7026"/>
+            <path d="M29.0659 18L37.4308 23.2414L30.7132 30.8575L30.1784 26.8783L18.6259 31.756L17 20.3319L29.5794 21.9792L29.0659 18Z" fill="white"/>
+            <path d="M37.4295 23.2417L38.0285 25.0601L31.3109 32.6762L30.7119 30.8578L37.4295 23.2417Z" fill="#AD7026"/>
+            <defs>
+            <linearGradient id="paint0_linear_229_17854" x1="44.822" y1="-7.21628" x2="6.19378" y2="12.4878" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FEA840"/>
+            <stop offset="1" stop-color="#FB971E"/>
+            </linearGradient>
+            </defs>
         </svg>
     }
     @@if (type === 'back') {

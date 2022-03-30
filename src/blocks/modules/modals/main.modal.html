@@ -45,13 +45,73 @@
                 "text" : "закрыть"
             })
         </div>
-        <div class="modal__stitle">Спасибо за покупку!</div>
-        <div class="modal__subtitle">Тут располагаем информацию о дальнейшей судьбе заказа и действиях покупателя</div>
-        <div class="modal__back">
-            @@include('../../components/buttons/buttons.html', {
-                "type" : "back",
-                "text" : "В каталог"
-            })
-        </div>
+        <div class="glide mount-slider--js">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="glide__slides">
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm1.jpg" alt="">
+                    <img class="desc_img" src="@img/sl1.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm2.jpg" alt="">
+                    <img class="desc_img" src="@img/sl2.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm3.jpg" alt="">
+                    <img class="desc_img" src="@img/sl3.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm4.jpg" alt="">
+                    <img class="desc_img" src="@img/sl4.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm5.jpg" alt="">
+                    <img class="desc_img" src="@img/sl5.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm6.jpg" alt="">
+                    <img class="desc_img" src="@img/sl6.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm7.jpg" alt="">
+                    <img class="desc_img" src="@img/sl7.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm8.jpg" alt="">
+                    <img class="desc_img" src="@img/sl8.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm9.jpg" alt="">
+                    <img class="desc_img" src="@img/sl9.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm10.jpg" alt="">
+                    <img class="desc_img" src="@img/sl10.jpg" alt="">
+                </li>
+                <li class="glide__slide tourItem">
+                    <img class="mob_img" src="@img/sm11.jpg" alt="">
+                    <img class="desc_img" src="@img/sl11.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="modal__controls" data-glide-el="controls">
+                <div data-glide-dir="<">
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "prev",
+                        "text" : "Назад"
+                    })
+                </div>
+                <div class="number">
+                    <span>{{ modals.slider.index+1 }}</span> /
+                    <span>{{ modals.itemLength }}</span>
+                </div>
+                <div data-glide-dir=">">
+                    @@include('../../components/buttons/buttons.html', {
+                        "type" : "next",
+                        "text" : "Далее"
+                    })
+                </div>
+              </div>
+          </div>
     </div>
 </div>

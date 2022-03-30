@@ -11,11 +11,11 @@
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
-        @@include('blocks/components/buttons/buttons.html', {
+        @@include('blocks/components/buttons/links/index.html', {
             "type" : "order",
             "text" : "Мои заказы"
         })
-        @@include('blocks/components/buttons/buttons.html', {
+        @@include('blocks/components/buttons/links/index.html', {
             "type" : "cart_min",
             "text" : "Корзина"
         })
@@ -62,6 +62,10 @@
         @@include('blocks/components/buttons/buttons.html', {
             "type" : "prev",
             "text" : "Назад"
+        })
+        @@include('blocks/components/buttons/buttons.html', {
+            "type" : "next",
+            "text" : "Далее"
         })
         @@include('blocks/components/buttons/buttons.html', {
             "type" : "slider_next",

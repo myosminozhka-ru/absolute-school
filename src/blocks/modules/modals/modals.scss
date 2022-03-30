@@ -5,7 +5,7 @@
     right: 0;
     bottom: 0;
     text-align: center;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(131, 80, 19, 0.4);
     z-index: 200;
     opacity: 0;
     visibility: hidden;
@@ -92,7 +92,79 @@
         }
     }
     &.education {
-        
+        padding: 0;
+        background: rgba(32, 32, 32, 0.4);
+        .modal__in {
+            padding: 0;
+            background: none;
+            width: 100%;
+            max-width: 100%;
+            min-height: 0;
+            height: 100vh;
+        }
+        .modal__closer {
+            z-index: 2;
+            top: vw(59);
+            right: vw(56);
+        }
+        .modal__controls {
+            z-index: 2;
+            right: vw(55);
+            bottom: vw(120);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: vw(710);
+            width: 100%;
+        }
+        .glide {
+            &__slides {
+                transform:none !important; 
+                width:auto !important; 
+                display:block;
+            }
+            &__slide {
+                position:absolute; 
+                left:0; 
+                top:0; 
+                opacity:0; 
+                transition:opacity .5s;
+                height: 100vh;
+                &:first-child {
+                    position:relative;
+                }
+                &--active {
+                    z-index:1; 
+                    opacity:1;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    &.mob_img {
+                        display: none;
+                    }
+                }
+            }
+            .number {
+                font-family: 'Jingleberry', serif;
+                font-style: normal;
+                font-weight: 900;
+                font-size: vw(55);
+                line-height: 160%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                span {
+                    &:nth-child(2) {
+                        font-size: vw(35);
+                        color: #e2dddd;
+                    }
+                }
+            }
+        }
     }
 }
 .isTablet, .isMobile {
@@ -123,6 +195,34 @@
         }
         &__buttons {
             max-width: 230px;
+        }
+        &.education {
+            .modal__controls {
+                max-width: calc(100% - 30px);
+                bottom: 35px;
+                left: 15px;
+                right: 15px;
+            }
+            .glide {
+                .number {
+                    font-size: 35px;
+                    span {
+                        &:nth-child(2) {
+                            font-size: 20px;
+                        }
+                    }
+                }    
+                &__slide {
+                    img {
+                        &.desc_img {
+                            display: none;
+                        }
+                        &.mob_img {
+                            display: block;
+                        }
+                    }
+                }            
+            }
         }
     }
 }

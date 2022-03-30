@@ -1,5 +1,5 @@
 <div class="orders center-block">
-    <div class="orders__block" v-for="product in products" :key="product.index">
+    <div class="orders__block" v-for="product in ordersProducts" :key="ordersProducts.index">
         <div class="orders__block--l-side">
             <div class="orders__block--order-number"><span>№ заказа:</span> 0000000001</div>
             <div class="orders__block--date">От: 16.02.2021</div>
@@ -80,12 +80,12 @@
                     "type" : "orange",
                     "text" : "Повторить"
                 })
-                <div class="orders__block--more">Подробней</div>
+                <div class="orders__block--more">Подробнее</div>
             </div>
         </div>
     </div>
     <div class="orders__more">
-        <div class="button button--more" @click="cards.loadMore.apply(cards)">
+        <div class="button button--more" @click="mainOrders.loadMore.apply(mainOrders)">
             <svg width="261" height="100" viewBox="0 0 261 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_227_7177)">
                 <path d="M5.68066 4.21286C5.68066 1.92233 7.60041 0.0995808 9.88787 0.218236L206.141 10.3982C206.54 10.4189 206.939 10.3797 207.327 10.2819L243.077 1.25693C245.604 0.619054 248.057 2.52918 248.057 5.13526V46.7196C248.057 47.0646 248.101 47.4081 248.189 47.7416L260.432 94.0672C261.17 96.8612 258.793 99.4921 255.939 99.04L169.456 85.3413C169.182 85.2979 168.904 85.2832 168.627 85.2972L4.74867 93.6238C2.269 93.7497 0.274768 91.6098 0.575049 89.1451L5.68066 47.2393V4.21286Z" fill="#85A832"/>

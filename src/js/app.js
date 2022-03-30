@@ -9,6 +9,7 @@ import MainHeader from '../blocks/modules/header/header.js';
 import Cards from '../blocks/modules/cards/cards.js';
 import TabsBlock from '../blocks/modules/tabs_block/tabs_block.js';
 import Modals from '../blocks/modules/modals/modals.js';
+import MainOrders from '../blocks/modules/orders/orders.js';
 
 
 
@@ -17,7 +18,7 @@ window.app = new Vue({
     data: () => ({
         isMounted: false,
         cart: {
-            amount: 0
+            amount: 1
         },
         sizes: {
             tablet: 1024,
@@ -77,8 +78,15 @@ window.app = new Vue({
         modals: new Modals({
             modalsSelector: "data-modal",
             modalsOpenerSelector: "data-modal-id",
-            openedClass: "isOpened"
-        })
+            openedClass: "isOpened",
+            sliderOptions: {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                transitionType: 'fade'
+            }
+        }),
+        mainOrders: new MainOrders()
     }),
     beforeCreate() {
         window.addEventListener('resize', () => {
@@ -91,6 +99,7 @@ window.app = new Vue({
         this.cards.init();
         this.modals.init();
         this.animateBlocks();
+        this.mainOrders.init();
     },
     computed: {
         isMobile: function () {
@@ -99,7 +108,7 @@ window.app = new Vue({
         isTablet: function () {
             return this.sizes.window < this.sizes.tablet && this.sizes.window > this.sizes.mobile;
         },
-        products: function () {
+        mainProducts: function () {
             switch (this.tabsBlock.selected) {
                 case 'all':
                     return this.cards.products;
@@ -107,11 +116,20 @@ window.app = new Vue({
                 default: 
                     return this.cards.products.filter(item => item.type === this.tabsBlock.selected);
             }
+        },
+        ordersProducts: function () {
+            switch (this.orderBlock.selected) {
+                case 'all':
+                    return this.mainOrders.products;
+                    break;
+                default: 
+                    return this.mainOrders.products.filter(item => item.type === this.orderBlock.selected);
+            }
         }
     },
     methods: {
         addClassToWrapper(nameOfClass) {
-            if (document.querySelector('.wrapper') ) {
+            if (document.querySelector('.wrapper')) {
                 document.querySelector('.wrapper').classList.add(nameOfClass)
             }
         },
