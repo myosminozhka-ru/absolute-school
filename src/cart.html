@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
-        @@include('blocks/modules/header/header.html', {})
-        <content class="content center-block">
-            @@include('blocks/modules/cart/cart.html', {})
-        </content>
-        @@include('blocks/modules/footer/footer.html', {})
-        @@include('blocks/modules/modals/main.modal.html', {})
+    <div class="wrapper" id="app">
+        <div class="wrapper__in" :class="{isMobile, isTablet}">
+            @@include('blocks/modules/header/header.html', {})
+            <content class="content center-block">
+                @@include('blocks/modules/cart/cart.html', {})
+            </content>
+            @@include('blocks/modules/footer/footer.html', {})
+            @@include('blocks/modules/modals/main.modal.html', {})
+        </div>
     </div>
     <script src="js/app.min.js"></script>
 </body>

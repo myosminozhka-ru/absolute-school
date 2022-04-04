@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина</title>
-    <link rel="stylesheet" href="css/style.css?_v=20220330121138">
+    <link rel="stylesheet" href="css/style.css?_v=20220404160929">
 </head>
 <body>
-    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
-        <header class="header center-block" :class="{'isOpened': mainHeader.isMobileMenuOpened}">
+    <div class="wrapper" id="app">
+        <div class="wrapper__in" :class="{isMobile, isTablet}">
+            <header class="header center-block" :class="{'isOpened': mainHeader.isMobileMenuOpened}">
     <a href="/absolute-school/dist/" class="header__logo"><img src="img/logo.png" alt="Логотип"></a>
     <div class="button button--help" data-modal-id="3">
     
@@ -300,8 +301,8 @@
         </div>
     </div>
 </header>
-        <content class="content center-block">
-            
+            <content class="content center-block">
+                
     <h1>Корзина:</h1>
 
 
@@ -535,13 +536,13 @@
         </div>
     </div>
 </div>
-        </content>
-        <footer class="footer">
+            </content>
+            <footer class="footer">
     <div class="footer__in">
         <img src="img/logo.png" alt="Логотип">
     </div>
 </footer>
-        <div class="modal" data-modal="1">
+            <div class="modal" data-modal="1">
     <div class="modal__in">
         <div class="modal__closer">
             <div class="button button--close">
@@ -857,7 +858,8 @@
           </div>
     </div>
 </div>
+        </div>
     </div>
-    <script src="js/app.min.js?_v=20220330121138"></script>
+    <script src="js/app.min.js?_v=20220404160929"></script>
 </body>
 </html>
