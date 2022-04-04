@@ -3,7 +3,6 @@ globalFunctions.isWebp();
 
 import Vue from 'vue/dist/vue.js';
 import AOS from 'aos';
-import $ from 'jquery';
 
 import MainHeader from '../blocks/modules/header/header.js';
 import Cards from '../blocks/modules/cards/cards.js';

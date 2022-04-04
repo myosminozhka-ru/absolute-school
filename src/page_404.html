@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
-        @@include('blocks/components/subtract/subtract.html', {})
-        @@include('blocks/modules/header/header.html', {})
-        <content class="content">
-            @@include('blocks/modules/page_404/page_404.html', {})
-        </content>
-        <footer class="footer"></footer>
-        @@include('blocks/modules/modals/main.modal.html', {})
+    <div class="wrapper" id="app">
+        <div class="wrapper__in" :class="{isMobile, isTablet}">
+            @@include('blocks/components/subtract/subtract.html', {})
+            @@include('blocks/modules/header/header.html', {})
+            <content class="content">
+                @@include('blocks/modules/page_404/page_404.html', {})
+            </content>
+            <footer class="footer"></footer>
+            @@include('blocks/modules/modals/main.modal.html', {})
+        </div>
     </div>
     <script src="js/app.min.js"></script>
     <script>

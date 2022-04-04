@@ -12,12 +12,6 @@ html, body {
     padding: 0;
 }
 .wrapper {
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: vw(40) vw(150) vw(100) vw(150);
-    position: relative;
     &:before {
         content: '';
         position: absolute;
@@ -26,15 +20,24 @@ html, body {
         left: 0;
         right: 0;
         width: 100%;
+        pointer-events: none;
         height: 100%;
         background: rgba(255, 249, 228, 1) url(../img/bg_site.png) 0;
         z-index: 1;
     }
-    &.isTablet {
-        padding: 22px 15px 50px 15px;
-    }
-    &.isMobile {
-        padding: 22px 15px 50px 15px;
+    &__in {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: vw(40) vw(150) vw(100) vw(150);
+        position: relative;
+        &.isTablet {
+            padding: 22px 15px 50px 15px;
+        }
+        &.isMobile {
+            padding: 22px 15px 50px 15px;
+        }
     }
 }
 .header {

@@ -1569,6 +1569,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos],
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
   src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/Gilroy-Extrabold.woff") format("woff"), url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
   font-weight: 800;
 }
@@ -1576,8 +1583,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos],
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
+  font-weight: 800;
 }
 
 @font-face {
@@ -1592,13 +1599,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos],
   font-display: swap;
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("ttf");
   font-weight: 400;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.ttf") format("ttf");
-  font-weight: 800;
 }
 
 @font-face {
@@ -1635,17 +1635,8 @@ body {
   padding: 0;
 }
 
-.wrapper {
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 2.0833333333vw 7.8125vw 5.2083333333vw 7.8125vw;
-  position: relative;
-}
-
 .no-webp .wrapper:before {
-  background: #fff9e4 url(../img/bg_site.png) 0; }
+  background: rgb(255, 249, 228) url(../img/bg_site.png) 0; }
 
 .wrapper:before {
   content: "";
@@ -1655,15 +1646,25 @@ body {
   left: 0;
   right: 0;
   width: 100%;
+  pointer-events: none;
   height: 100%;
   z-index: 1;
 }
 
-.wrapper.isTablet {
+.wrapper__in {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2.0833333333vw 7.8125vw 5.2083333333vw 7.8125vw;
+  position: relative;
+}
+
+.wrapper__in.isTablet {
   padding: 22px 15px 50px 15px;
 }
 
-.wrapper.isMobile {
+.wrapper__in.isMobile {
   padding: 22px 15px 50px 15px;
 }
 
@@ -6089,7 +6090,7 @@ h4 {
   }
 }
 
-.webp .wrapper:before { background: #fff9e4 url(../img/bg_site.webp) 0; }
+.webp .wrapper:before { background: rgb(255, 249, 228) url(../img/bg_site.webp) 0; }
 
 .webp .cards__item:nth-child(odd):before { background: url(../img/girl.webp) 0 no-repeat; }
 
